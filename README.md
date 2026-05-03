@@ -81,7 +81,7 @@
 
 ## 许可
 
-- **框架代码**（`.opencode/`）：[MIT License](LICENSE)
+- **框架代码**（`.opencode/`）：[GNU General Public License v3.0](LICENSE)
 - **创作内容**（`大纲/`、`设定集/`、`番外/`、`.webnovel/`）：[CC BY-NC-SA 4.0](LICENSE-NOVEL)
   - 署名 (BY) — 必须标注原出处
   - 非商业 (NC) — 不允许商业使用
@@ -101,4 +101,4 @@
 本项目为实验性 AI 辅助创作项目。作者非专业作家，作品可能存在文笔、结构等方面的不足。
 项目内容仅供学习、交流、研究之用，不构成任何形式的创作指导或建议。
 
-[webnovel-writer-opencode]: https://github.com/anomalyco/opencode
+[webnovel-writer-opencode]: https://github.com/lujih/webnovel-writer-opencode

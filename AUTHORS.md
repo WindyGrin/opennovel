@@ -24,7 +24,7 @@
 - 番茄小说发布工具
 - Web Dashboard 可视化面板
 
-> 项目地址：https://github.com/anomalyco/opencode
+> 项目地址：https://github.com/lujih/webnovel-writer-opencode
 > 
 > 特此鸣谢。
 
