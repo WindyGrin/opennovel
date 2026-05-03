@@ -34,6 +34,7 @@ node_modules/
 .webnovel/archive/
 .webnovel/backups/
 .webnovel/summaries/
+.webnovel/index.db
 .opencode/.webnovel-current-project
 
 # --- IDE / 编辑器 ---
