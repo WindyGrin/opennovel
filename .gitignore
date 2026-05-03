@@ -1,0 +1,46 @@
+# ============================================================
+# .gitignore - 仙界逃兵 AI 小说共创项目
+# ============================================================
+
+# --- 敏感信息 ---
+.env
+
+# --- 模型缓存 (HuggingFace, ~9GB) ---
+.hf_cache/
+
+# --- 运行时产物 ---
+logs/
+*.log
+导出/
+审查报告/
+图片/
+
+# --- 正文（仅发布于番茄小说平台，不在 GitHub 公开）---
+正文/
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+
+# --- Node.js ---
+node_modules/
+.opencode/node_modules/
+.opencode/dashboard/frontend/node_modules/
+
+# --- 运行时状态 ---
+.webnovel/archive/
+.webnovel/backups/
+.webnovel/summaries/
+.opencode/.webnovel-current-project
+
+# --- IDE / 编辑器 ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db

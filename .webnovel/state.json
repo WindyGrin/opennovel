@@ -1,0 +1,105 @@
+{
+  "project_info": {
+    "title": "仙界逃兵",
+    "genre": "修仙",
+    "created_at": "2026-05-02",
+    "target_words": 2000000,
+    "target_chapters": 800,
+    "golden_finger_name": "重生封印",
+    "golden_finger_type": "重生流",
+    "golden_finger_style": "诙谐暗线",
+    "core_selling_points": "逃的不是仇人是被老婆拿捏的妻管严兄弟萧长河",
+    "protagonist_structure": "单主角",
+    "heroine_config": "西格玛男人",
+    "heroine_names": "",
+    "heroine_role": "",
+    "co_protagonists": "",
+    "co_protagonist_roles": "",
+    "antagonist_tiers": "卷1:大长老沈崇武;卷2:云隐宗内鬼长老;卷3:天律司执事厉淮(被迫营业);卷4:苏锦年+萧长河;卷5:萧长河(对峙);卷6:苏锦年(最终)",
+    "world_scale": "三界(苍渊→虚海→玄霄)",
+    "factions": "苍渊:沈氏/砥砺宗(铁氏/飞舟航线)/星汉阁(陆川/星痕网络/飞舟竞争者)/云隐宗/玉华阁(举报双标)/镇域司(仲裁)·青石学宫(女天才造假)。虚海:渡舟人/墟市。玄霄:萧氏/苏氏/天律司/纪元观测者",
+    "power_system_type": "双体系(苍渊:道痕体系/玄霄:传统练气筑基体系)",
+    "social_class": "底层凡人",
+    "resource_distribution": "苍渊灵气稀薄",
+    "gf_visibility": "完全隐藏",
+    "gf_irreversible_cost": "封印与兄弟命星相连，动用力量即暴露",
+    "target_reader": "修仙喜剧爱好者",
+    "platform": "番茄小说",
+    "currency_system": "",
+    "currency_exchange": "",
+    "sect_hierarchy": "",
+    "cultivation_chain": "",
+    "cultivation_subtiers": ""
+  },
+  "progress": {
+    "current_chapter": 0,
+    "total_words": 0,
+    "last_updated": "2026-05-02 20:42:48",
+    "volumes_completed": [],
+    "current_volume": 1,
+    "volumes_planned": []
+  },
+    "protagonist_state": {
+    "name": "沈安",
+    "power": {
+      "realm": "人阶初痕（表面）",
+      "layer": 1,
+      "bottleneck": "封印压制真实修为"
+    },
+    "location": {
+      "current": "苍渊·沈氏家族",
+      "last_chapter": 0
+    },
+    "family": {
+      "father": "沈怀远",
+      "father_role": "家族戒律长老",
+      "mother": "早逝",
+      "father_relation": "严父与不争气儿子的极致反差，父亲曾试图教训儿子反被打败，在外只能吃哑巴亏"
+    },
+    "key_characters": {
+      "xiao_changhe": {"name": "萧长河", "role": "前世兄弟，被妻子苏锦年拿捏的妻管严", "relation": "在找沈溪风问清真相"},
+      "su_jinnian": {"name": "苏锦年", "role": "萧长河之妻，暗线核心。因恐惧纪元更迭后修为归零而布局，表面上是在操纵所有人，实际被自己的恐惧操纵了一生，结局阴差阳错救了所有人。", "relation": "制造误会的始作俑者，但本意并非害人"},
+      "xuntian_jian": {"name": "巡天鉴", "role": "萧长河的仙器，有独立器灵", "relation": "奉命扫描苍渊找沈溪风"},
+      "jian_lao": {"name": "鉴老", "role": "巡天鉴器灵", "relation": "被沈溪风用黑历史威胁+贿赂，暗中帮忙"},
+      "shen_shou_zhuo": {"name": "沈守拙", "role": "沈氏族中老实人", "relation": "比武中被沈溪风无意击败后被冤枉假斗，暗中知道沈溪风实力"},
+      "shang_hen": {"name": "拭痕", "role": "沈溪风前世仙器，器灵在二十三连败的酒桌赌局中被迫认沈溪风为\"爹\"。", "relation": "被沈溪风以\"醉卧九天\"（编造的功法名）骗入沉睡并封印。中期梦境借力，后期苏醒。借力时沈溪风会嘴瓢/青笔印/酒嗅/引力紊乱。"},
+      "li_huai": {"name": "厉淮", "role": "玄霄天律司第七执事，奉命追捕沈溪风。曾受沈溪风救命之恩。", "relation": "表面威严追捕，内心拼命放水。被勤奋的下属搞得骑虎难下。中期转为盟友。"},
+      "tie_li": {"name": "铁骊", "role": "砥砺宗宗主", "relation": "被沈怀远托关系送进来的\"问题弟子\"沈安的宗主。从必须磨动他到算了放弃到发现他莫名突破，经历了完整心路历程。"},
+      "qing_luo": {"name": "沈青萝", "role": "沈氏天才少女", "relation": "单方面研究沈安。在家族会议上公开念出沈安日轨迹图，导致全族误会两人恋爱。"},
+      "wen_xiaolu": {"name": "温小鹿", "role": "砥砺宗二师姐，实际最强弟子", "relation": "与沈安是沉默同盟——两人共处一室两个时辰不说一个字，全宗管这叫约会。"},
+      "yun_du": {"name": "云渡", "role": "渡舟人少女", "relation": "唯一明确喜欢沈安的人。表达方式：送发光石头、法则枯叶、活鱼。"},
+      "lu_chuan": {"name": "陆川", "role": "星汉阁创始人", "relation": "原砥砺宗弟子，被铁骊赶走后创立星汉阁，飞舟行业颠覆者。"},
+      "ji_qiuying": {"name": "纪秋萤", "role": "青石学宫女弟子，被包装的\"道痕天才\"", "relation": "青石学宫造星事件的被包装者，事件后被遗忘。"},
+      "zhou_gong": {"name": "周宫主", "role": "青石学宫第三代宫主", "relation": "为维持学宫运转包装纪秋萤，成功后不敢面对真相。"}
+    },
+    "golden_finger": {
+      "name": "重生封印",
+      "level": 1,
+      "cooldown": 0,
+      "skills": []
+    },
+    "attributes": {}
+  },
+  "relationships": {},
+  "disambiguation_warnings": [],
+  "disambiguation_pending": [],
+  "world_settings": {
+    "power_system": [],
+    "factions": [],
+    "locations": []
+  },
+  "plot_threads": {
+    "active_threads": [],
+    "foreshadowing": []
+  },
+  "review_checkpoints": [],
+  "chapter_meta": {},
+  "strand_tracker": {
+    "last_quest_chapter": 0,
+    "last_fire_chapter": 0,
+    "last_constellation_chapter": 0,
+    "current_dominant": "quest",
+    "chapters_since_switch": 0,
+    "history": []
+  }
+}
