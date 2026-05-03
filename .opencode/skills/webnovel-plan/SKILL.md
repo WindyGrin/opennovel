@@ -112,13 +112,14 @@ Must satisfy (hard requirements):
 
 Write output:
 ```bash
+mkdir -p "$PROJECT_ROOT/大纲/卷纲/第{volume_id}卷"
 @'
 {beat_sheet_content}
-'@ | Set-Content -Encoding UTF8 "$PROJECT_ROOT/大纲/第{volume_id}卷-节拍表.md"
+'@ | Set-Content -Encoding UTF8 "$PROJECT_ROOT/大纲/卷纲/第{volume_id}卷/节拍表.md"
 ```
 
 Completion criteria:
-- `大纲/第{volume_id}卷-节拍表.md` 存在且非空
+- `大纲/卷纲/第{volume_id}卷/节拍表.md` 存在且非空
 - Step 4/5 能直接引用 Catalyst / 中段反转 / 最低谷 / 大兑现 / 新钩子来锚定节奏
 
 ## 4.5) Generate volume timeline (时间线表)
@@ -139,11 +140,11 @@ Write output:
 ```bash
 @'
 {timeline_content}
-'@ | Set-Content -Encoding UTF8 "$PROJECT_ROOT/大纲/第{volume_id}卷-时间线.md"
+'@ | Set-Content -Encoding UTF8 "$PROJECT_ROOT/大纲/卷纲/第{volume_id}卷/时间线.md"
 ```
 
 Completion criteria:
-- `大纲/第{volume_id}卷-时间线.md` 存在且非空
+- `大纲/卷纲/第{volume_id}卷/时间线.md` 存在且非空
 - 时间基准和本卷跨度已明确
 - 若存在倒计时事件，已在表中列出
 
@@ -166,7 +167,7 @@ cat "${SKILL_ROOT}/references/outlining/conflict-design.md"
 
 Load beat sheet (must exist):
 ```bash
-cat "$PROJECT_ROOT/大纲/第{volume_id}卷-节拍表.md"
+cat "$PROJECT_ROOT/大纲/卷纲/第{volume_id}卷/节拍表.md"
 ```
 
 Extract for current genre:
@@ -350,15 +351,15 @@ Save after each batch:
 ```bash
 @'
 {batch_content}
-'@ | Add-Content -Encoding UTF8 "$PROJECT_ROOT/大纲/第{volume_id}卷-详细大纲.md"
+'@ | Add-Content -Encoding UTF8 "$PROJECT_ROOT/大纲/卷纲/第{volume_id}卷/详细大纲.md"
 ```
 
 ## 7) Enrich existing setting files from volume outline
 目标：卷纲写完后，把本卷新增事实写回“现有设定集文件”，确保后续写作可直接读取。
 
 输入来源：
-- `大纲/第{volume_id}卷-节拍表.md`
-- `大纲/第{volume_id}卷-详细大纲.md`
+- `大纲/卷纲/第{volume_id}卷/节拍表.md`
+- `大纲/卷纲/第{volume_id}卷/详细大纲.md`
 - 现有设定集文件（世界观/力量体系/主角卡/主角组/女主卡/反派设计）
 
 写回策略（必须）：
@@ -417,7 +418,7 @@ Every chapter must have:
 - 钩子（类型 + 30 字描述）
 
 **6. 时间线一致性检查（新增）**
-- 时间线表文件存在：`大纲/第{volume_id}卷-时间线.md`
+- 时间线表文件存在：`大纲/卷纲/第{volume_id}卷/时间线.md`
 - 所有章节时间锚点已填写
 - 时间单调递增（不得回跳，除非明确标注为闪回）
 - 倒计时推进正确（D-5 → D-4 → D-3，不得跳跃）
@@ -436,9 +437,9 @@ python "${SCRIPTS_DIR}/webnovel.py" --project-root "$PROJECT_ROOT" update-state 
 ```
 
 Final check:
-- 节拍表文件已写入：`大纲/第{volume_id}卷-节拍表.md`
-- 时间线表文件已写入：`大纲/第{volume_id}卷-时间线.md`
-- 章纲文件已写入：`大纲/第{volume_id}卷-详细大纲.md`
+- 节拍表文件已写入：`大纲/卷纲/第{volume_id}卷/节拍表.md`
+- 时间线表文件已写入：`大纲/卷纲/第{volume_id}卷/时间线.md`
+- 章纲文件已写入：`大纲/卷纲/第{volume_id}卷/详细大纲.md`
 - 设定集已完成基线补齐与本卷增量补充（原文件内可见）
 - 每章包含：目标/阻力/代价/时间锚点/章内时间跨度/与上章时间差/爽点/Strand/反派层级/视角/关键实体/本章变化/章末未闭合问题/钩子
 - 时间线单调递增，倒计时推进正确

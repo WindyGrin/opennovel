@@ -65,6 +65,7 @@ export default function App() {
                 {page === 'dashboard' && <DashboardPage data={projectInfo} key={refreshKey} />}
                 {page === 'entities' && <EntitiesPage key={refreshKey} />}
                 {page === 'graph' && <GraphPage key={refreshKey} />}
+                {page === 'glossary' && <GlossaryPage key={refreshKey} />}
                 {page === 'chapters' && <ChaptersPage key={refreshKey} />}
                 {page === 'files' && <FilesPage />}
                 {page === 'reading' && <ReadingPowerPage key={refreshKey} />}
@@ -79,6 +80,7 @@ const NAV_ITEMS = [
     { id: 'dashboard', icon: '📊', label: '数据总览' },
     { id: 'entities', icon: '👤', label: '设定词典' },
     { id: 'graph', icon: '🕸️', label: '关系图谱' },
+    { id: 'glossary', icon: '📖', label: '术语词典' },
     { id: 'chapters', icon: '📝', label: '章节一览' },
     { id: 'files', icon: '📁', label: '文档浏览' },
     { id: 'reading', icon: '🔥', label: '追读力' },
@@ -358,6 +360,8 @@ function GraphPage() {
     const [typeFilter, setTypeFilter] = useState('')
     const [chapterFilter, setChapterFilter] = useState('')
     const [selectedNode, setSelectedNode] = useState(null)
+    // 每次过滤器变化递增，强制 ForceGraph3D 完全重建
+    const [graphKey, setGraphKey] = useState(0)
 
     useEffect(() => {
         setLoading(true)
@@ -386,7 +390,7 @@ function GraphPage() {
     const filteredNodeIds = new Set(filteredNodes.map(n => n.id))
     const filteredLinks = useMemo(() => {
         return graphData.links.filter(l =>
-            filteredNodeIds.has(l.source) && filteredNodeIds.has(l.target)
+            filteredNodeIds.has(l.source) || filteredNodeIds.has(l.target)
         )
     }, [graphData.links, filteredNodeIds])
 
@@ -414,8 +418,9 @@ function GraphPage() {
     }, [graphData.nodes])
 
     const typeColors = {
-        '角色': '#4f8ff7', '地点': '#34d399', '星球': '#22d3ee', '神仙': '#f59e0b',
-        '势力': '#8b5cf6', '招式': '#ef4444', '法宝': '#ec4899'
+        '角色': '#4f8ff7', '势力': '#8b5cf6', '地点': '#34d399',
+        '玄霄势力': '#fbbf24', '法宝': '#f472b6', '道具': '#06b6d4',
+        '契约': '#ec4899', '招式': '#ef4444', '星球': '#22d3ee', '神仙': '#f59e0b'
     }
 
     function strengthColor(s) {
@@ -429,6 +434,7 @@ function GraphPage() {
         setTypeFilter('')
         setChapterFilter('')
         setSelectedNode(null)
+        setGraphKey(k => k + 1)
     }
 
     if (loading) return (
@@ -461,15 +467,15 @@ function GraphPage() {
             <div className="card" style={{ padding: '0.75rem 1rem' }}>
                 <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', alignItems: 'center' }}>
                     <input className="filter-input" placeholder="搜索实体名称…" value={searchQuery}
-                        onChange={e => setSearchQuery(e.target.value)}
+                        onChange={e => { setSearchQuery(e.target.value); setSelectedNode(null); setGraphKey(k => k + 1) }}
                         style={{ padding: '0.4rem 0.6rem', borderRadius: '6px', border: '1px solid var(--border)', background: 'var(--bg-card)', color: 'var(--text)', width: 180 }} />
-                    <select value={typeFilter} onChange={e => setTypeFilter(e.target.value)}
+                    <select value={typeFilter} onChange={e => { setTypeFilter(e.target.value); setSelectedNode(null); setGraphKey(k => k + 1) }}
                         style={{ padding: '0.4rem 0.6rem', borderRadius: '6px', border: '1px solid var(--border)', background: 'var(--bg-card)', color: 'var(--text)' }}>
                         <option value="">全部类型</option>
                         {entityTypes.map(t => <option key={t} value={t}>{t}</option>)}
                     </select>
                     <input type="number" min="1" placeholder="章节号过滤" value={chapterFilter}
-                        onChange={e => setChapterFilter(e.target.value)}
+                        onChange={e => { setChapterFilter(e.target.value); setSelectedNode(null); setGraphKey(k => k + 1) }}
                         style={{ padding: '0.4rem 0.6rem', borderRadius: '6px', border: '1px solid var(--border)', background: 'var(--bg-card)', color: 'var(--text)', width: 120 }} />
                     <button className="btn btn-sm" style={{ background: '#64748b', color: '#fff' }} onClick={resetFilters}>重置</button>
                     {selectedNode && (
@@ -483,6 +489,7 @@ function GraphPage() {
 
             <div className="card graph-shell" style={{ position: 'relative' }}>
                 <ForceGraph3D
+                    key={graphKey}
                     graphData={{ nodes: filteredNodes, links: filteredLinks }}
                     nodeLabel="name"
                     nodeColor="color"
@@ -1599,6 +1606,148 @@ function ExportPage() {
                 </div>
             )}
         </div>
+    )
+}
+
+function GlossaryPage() {
+    const [content, setContent] = useState('')
+    const [loading, setLoading] = useState(true)
+    const [error, setError] = useState(null)
+
+    useEffect(() => {
+        setLoading(true)
+        fetchJSON('/api/settings/dictionary')
+            .then(data => {
+                setContent(data.content || '')
+                setError(null)
+            })
+            .catch(e => setError(e.message))
+            .finally(() => setLoading(false))
+    }, [])
+
+    if (loading) return (
+        <>
+            <div className="page-header"><h2>📖 术语词典</h2></div>
+            <div className="card" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: 400 }}>
+                <div className="loading">加载中…</div>
+            </div>
+        </>
+    )
+
+    if (error) return (
+        <>
+            <div className="page-header"><h2>📖 术语词典</h2></div>
+            <div className="card" style={{ textAlign: 'center', padding: '3rem', color: '#f87171' }}>
+                <p>加载失败: {error}</p>
+                <p style={{ color: '#94a3b8', fontSize: '0.85rem', marginTop: '0.5rem' }}>
+                    请确认 设定集/核心设定/设定词典.md 文件存在
+                </p>
+            </div>
+        </>
+    )
+
+    function renderMarkdown(md) {
+        const lines = md.split('\n')
+        const elements = []
+        let inCodeBlock = false
+        let codeContent = ''
+        let inTable = false
+        let tableRows = []
+        let tableAlign = []
+
+        function flushTable() {
+            if (tableRows.length === 0) return
+            const header = tableRows[0]
+            const body = tableRows.slice(1)
+            elements.push(
+                React.createElement('div', { key: elements.length, style: { overflowX: 'auto', margin: '0.75rem 0' } },
+                    React.createElement('table', {
+                        style: { width: '100%', borderCollapse: 'collapse', fontSize: '0.8rem', border: '1px solid #334155', borderRadius: '6px' }
+                    },
+                        React.createElement('thead', null,
+                            React.createElement('tr', { style: { background: '#1e293b' } },
+                                header.map((h, i) =>
+                                    React.createElement('th', {
+                                        key: i, style: { padding: '0.4rem 0.6rem', textAlign: tableAlign[i] || 'left', borderBottom: '2px solid #475569', color: '#e2e8f0', fontWeight: 600 }
+                                    }, h.replace(/\*\*/g, ''))
+                                )
+                            )
+                        ),
+                        React.createElement('tbody', null,
+                            body.map((row, ri) =>
+                                React.createElement('tr', { key: ri, style: { background: ri % 2 === 0 ? '#0f172a' : '#1e293b' } },
+                                    row.map((cell, ci) =>
+                                        React.createElement('td', {
+                                            key: ci, style: { padding: '0.35rem 0.6rem', borderBottom: '1px solid #334155', color: '#cbd5e1' }
+                                        }, cell.replace(/\*\*(.+?)\*\*/g, '<strong style="color:#fbbf24">$1</strong>'))
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            )
+            tableRows = []
+            tableAlign = []
+            inTable = false
+        }
+
+        function parseTableRow(line) {
+            line = line.replace(/^\|/, '').replace(/\|$/, '')
+            if (line.includes('---')) {
+                const cells = line.split('|').map(c => c.trim())
+                tableAlign = cells.map(c => c.includes(':--') && c.includes('--:') ? 'center' : c.includes('--:') ? 'right' : 'left')
+                return null
+            }
+            return line.split('|').map(c => c.trim())
+        }
+
+        const st = (s) => ({ color: '#cbd5e1', fontSize: '0.82rem', lineHeight: '1.6' })
+
+        for (let i = 0; i < lines.length; i++) {
+            const line = lines[i]
+            const trimmed = line.trim()
+
+            if (trimmed.startsWith('```')) {
+                if (inCodeBlock) {
+                    elements.push(React.createElement('pre', { key: elements.length, style: { background: '#0f172a', padding: '1rem', borderRadius: '8px', fontSize: '0.78rem', lineHeight: '1.6', color: '#94a3b8', overflow: 'auto', border: '1px solid #334155', margin: '0.75rem 0', whiteSpace: 'pre-wrap' } }, React.createElement('code', null, codeContent)))
+                    codeContent = ''; inCodeBlock = false
+                } else { inCodeBlock = true }
+                continue
+            }
+            if (inCodeBlock) { codeContent += line + '\n'; continue }
+            if (inTable && (!trimmed.startsWith('|') || trimmed === '')) { flushTable() }
+
+            if (trimmed.startsWith('### ')) { flushTable(); elements.push(React.createElement('h3', { key: elements.length, style: { color: '#e2e8f0', fontSize: '1rem', margin: '1.2rem 0 0.5rem', borderBottom: '1px solid #334155', paddingBottom: '0.3rem' } }, trimmed.replace('### ', ''))); continue }
+            if (trimmed.startsWith('## ')) { flushTable(); elements.push(React.createElement('h2', { key: elements.length, style: { color: '#f1f5f9', fontSize: '1.2rem', margin: '1.5rem 0 0.6rem', borderBottom: '2px solid #475569', paddingBottom: '0.4rem' } }, trimmed.replace('## ', ''))); continue }
+            if (trimmed.startsWith('# ')) { flushTable(); elements.push(React.createElement('h1', { key: elements.length, style: { color: '#f8fafc', fontSize: '1.4rem', margin: '1.5rem 0 0.8rem' } }, trimmed.replace('# ', ''))); continue }
+            if (trimmed.startsWith('> ')) { flushTable(); elements.push(React.createElement('blockquote', { key: elements.length, style: { borderLeft: '3px solid #f59e0b', padding: '0.4rem 0.8rem', margin: '0.5rem 0', background: 'rgba(245,158,11,0.06)', borderRadius: '0 6px 6px 0', color: '#d1d5db', fontSize: '0.85rem', fontStyle: 'italic' } }, trimmed.replace(/^> ?/, ''))); continue }
+            if (trimmed === '---') { flushTable(); elements.push(React.createElement('hr', { key: elements.length, style: { border: 'none', borderTop: '1px solid #334155', margin: '1rem 0' } })); continue }
+
+            if (trimmed.startsWith('|')) { const row = parseTableRow(line); if (row) { if (!inTable) { inTable = true; tableRows = [] } tableRows.push(row) } continue }
+            if (trimmed.startsWith('- ')) { flushTable(); const indent = (line.match(/^(\s*)/) || [''])[0].length; elements.push(React.createElement('li', { key: elements.length, style: { ...st(), marginLeft: indent > 2 ? '2rem' : '1rem', marginBottom: '0.2rem' } }, trimmed.replace(/^- /, '').replace(/\*\*(.+?)\*\*/g, '<strong style="color:#fbbf24">$1</strong>'))); continue }
+            if (trimmed === '') { flushTable(); elements.push(React.createElement('div', { key: elements.length, style: { height: '0.5rem' } })); continue }
+
+            flushTable()
+            elements.push(React.createElement('p', { key: elements.length, style: st() }, trimmed.replace(/\*\*(.+?)\*\*/g, '<strong style="color:#fbbf24">$1</strong>')))
+        }
+        flushTable()
+        if (inCodeBlock) { elements.push(React.createElement('pre', { key: elements.length, style: { background: '#0f172a', padding: '1rem', borderRadius: '8px', fontSize: '0.78rem', lineHeight: '1.6', color: '#94a3b8', overflow: 'auto', border: '1px solid #334155', margin: '0.75rem 0' } }, React.createElement('code', null, codeContent))) }
+        return elements
+    }
+
+    return (
+        <>
+            <div className="page-header">
+                <h2>📖 术语词典</h2>
+                <span className="card-badge badge-blue">设定集/核心设定/设定词典.md</span>
+            </div>
+            <div className="card" style={{ padding: '1.5rem 2rem', maxHeight: 'calc(100vh - 160px)', overflowY: 'auto' }}>
+                <div style={{ fontFamily: "'Inter', 'Noto Sans SC', sans-serif" }}>
+                    {renderMarkdown(content)}
+                </div>
+            </div>
+        </>
     )
 }
 

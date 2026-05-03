@@ -299,9 +299,9 @@ def create_app(project_root: str | Path | None = None) -> FastAPI:
             entity_map = {e["id"]: dict(e) for e in ents}
 
             type_colors = {
-                "角色": "#4f8ff7", "地点": "#34d399", "星球": "#22d3ee",
-                "神仙": "#f59e0b", "势力": "#8b5cf6", "招式": "#ef4444",
-                "法宝": "#ec4899",
+                "角色": "#4f8ff7", "势力": "#8b5cf6", "地点": "#34d399",
+                "玄霄势力": "#fbbf24", "法宝": "#f472b6", "道具": "#06b6d4",
+                "契约": "#ec4899", "招式": "#ef4444", "星球": "#22d3ee", "神仙": "#f59e0b",
             }
 
             # 收集所有涉及的实体 ID
@@ -619,6 +619,18 @@ def create_app(project_root: str | Path | None = None) -> FastAPI:
                 _watcher.unsubscribe(q)
 
         return StreamingResponse(_gen(), media_type="text/event-stream")
+
+    # ===========================================================
+    # 术语词典 - 读取 设定词典.md
+    # ===========================================================
+
+    @app.get("/api/settings/dictionary")
+    def settings_dictionary():
+        """返回 设定集/核心设定/设定词典.md 的 Markdown 原文。"""
+        dict_path = project_root / "设定集" / "核心设定" / "设定词典.md"
+        if not dict_path.is_file():
+            raise HTTPException(404, "设定词典文件不存在: 设定集/核心设定/设定词典.md")
+        return {"content": dict_path.read_text(encoding="utf-8"), "path": str(dict_path)}
 
     # ===========================================================
     # 前端静态文件托管
