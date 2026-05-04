@@ -32,9 +32,9 @@
     "cultivation_subtiers": ""
   },
   "progress": {
-    "current_chapter": 0,
-    "total_words": 0,
-    "last_updated": "2026-05-02 20:42:48",
+    "current_chapter": 1,
+    "total_words": 2500,
+    "last_updated": "2026-05-04 00:00:00",
     "volumes_completed": [],
     "current_volume": 1,
     "volumes_planned": [
@@ -54,7 +54,7 @@
     },
     "location": {
       "current": "苍渊·沈氏家族",
-      "last_chapter": 0
+      "last_chapter": 1
     },
     "family": {
       "father": "沈怀远",
@@ -132,6 +132,26 @@
         "name": "周宫主",
         "role": "青石学宫第三代宫主",
         "relation": "为维持学宫运转包装纪秋萤，成功后不敢面对真相。"
+      },
+      "kebei_dizi": {
+        "name": "刻碑弟子",
+        "role": "沈氏祠堂石碑前的刻碑人，功能性POV角色",
+        "relation": "已在碑前刻了两年。发现族谱规律——碑上名字无一出自长老房头。写下「族规对人有别」。"
+      },
+      "lao_shijiang": {
+        "name": "老石匠",
+        "role": "沈氏祠堂后的老石匠",
+        "relation": "磨了一辈子刻刀。对刻碑弟子的疑问只回了一句「加件衣服，碑前风大」，看似冷淡实则保护。"
+      },
+      "shen_huaiyuan": {
+        "name": "沈怀远",
+        "role": "沈氏戒律长老，沈安之父",
+        "relation": "三年前大执事宣读逐出令时打翻茶盏，借茶汤浸毁令纸，使逐出令三年未执行。表面严厉实则护子。"
+      },
+      "shen_chongwu": {
+        "name": "沈崇武",
+        "role": "沈氏大长老，卷1主要对手",
+        "relation": "掌控沈氏十二长老体制的核心人物。族规体系的实际维护者。"
       }
     },
     "golden_finger": {
@@ -142,7 +162,76 @@
     },
     "attributes": {}
   },
-  "relationships": {},
+  "entities": {
+    "kebei_dizi": {
+      "id": "kebei_dizi",
+      "type": "角色",
+      "canonical_name": "刻碑弟子",
+      "tier": "装饰",
+      "desc": "沈氏祠堂石碑前的刻碑人，功能性POV角色，已在碑前刻了两年。发现族谱规律——碑上名字无一出自长老房头。写下「族规对人有别」。",
+      "first_appearance": 1,
+      "last_appearance": 1
+    },
+    "lao_shijiang": {
+      "id": "lao_shijiang",
+      "type": "角色",
+      "canonical_name": "老石匠",
+      "tier": "装饰",
+      "desc": "沈氏祠堂后的老石匠，磨了一辈子刻刀。对刻碑弟子的疑问只回了一句「加件衣服，碑前风大」，看似冷淡实则保护。",
+      "first_appearance": 1,
+      "last_appearance": 1
+    },
+    "shen_huaiyuan": {
+      "id": "shen_huaiyuan",
+      "type": "角色",
+      "canonical_name": "沈怀远",
+      "tier": "重要",
+      "desc": "沈氏戒律长老，沈安之父。三年前大执事宣读逐出令时打翻茶盏，借茶汤浸毁令纸，使逐出令三年未执行。表面严厉实则护子。",
+      "first_appearance": 1,
+      "last_appearance": 1
+    },
+    "shen_chongwu": {
+      "id": "shen_chongwu",
+      "type": "角色",
+      "canonical_name": "沈崇武",
+      "tier": "重要",
+      "desc": "沈氏大长老，卷1主要对手。掌控沈氏十二长老体制的核心人物。族规体系的实际维护者。",
+      "first_appearance": 1,
+      "last_appearance": 1
+    },
+    "shen_an": {
+      "id": "shen_an",
+      "type": "角色",
+      "canonical_name": "沈安",
+      "tier": "主角",
+      "desc": "玄霄巅峰大佬假死逃到苍渊，当戒律长老的躺平儿子。本章仅间接提及——三年前因「三季描红不过关」被逐出令所涉，但因父亲沈怀远打翻茶盏，逐出令三年未执行，石碑上始终空着他的名字。",
+      "first_appearance": 1,
+      "last_appearance": 1
+    }
+  },
+  "relationships": {
+    "rel_01": {
+      "from": "kebei_dizi",
+      "to": "lao_shijiang",
+      "type": "师徒/传承",
+      "description": "刻碑弟子向老石匠请教族谱规律，老石匠以「加件衣服，碑前风大」回应，既保护又默许其继续观察",
+      "first_chapter": 1
+    },
+    "rel_02": {
+      "from": "shen_huaiyuan",
+      "to": "shen_an",
+      "type": "父子",
+      "description": "戒律长老沈怀远与其独子沈安。三年前沈怀远当众打翻茶盏保护儿子免于被逐出家族",
+      "first_chapter": 1
+    },
+    "rel_03": {
+      "from": "kebei_dizi",
+      "to": "shen_an",
+      "type": "观察/共情",
+      "description": "刻碑弟子每日刻碑，注意到应属于沈安的空隙始终空白，暗中记下「族规对人有别」",
+      "first_chapter": 1
+    }
+  },
   "disambiguation_warnings": [],
   "disambiguation_pending": [],
   "world_settings": {
@@ -151,17 +240,89 @@
     "locations": []
   },
   "plot_threads": {
-    "active_threads": [],
-    "foreshadowing": []
+    "active_threads": [
+      {
+        "id": "thread_01",
+        "name": "逐出令之谜",
+        "type": "主线索",
+        "description": "三年前沈安被逐出令所涉，因沈怀远打翻茶盏令纸被浸毁，逐出令至今未执行。祠堂石碑上留有三指宽空隙——对应沈安的名字。压在案牍下的浸毁令纸三年无人翻动。",
+        "first_chapter": 1,
+        "status": "active"
+      },
+      {
+        "id": "thread_02",
+        "name": "族规之别的观察",
+        "type": "暗线",
+        "description": "刻碑弟子通过对比碑上名字与族谱，发现碑上刻入的名字无一出自十二长老房头——「族规对人有别」",
+        "first_chapter": 1,
+        "status": "active"
+      }
+    ],
+    "foreshadowing": [
+      {
+        "id": "fs_01",
+        "name": "三指宽空隙",
+        "description": "石碑上三指宽的空隙——对应沈安的名字。这块石面边缘被长久注视磨得温润，暗示多人知道此事却无人点破。",
+        "chapter": 1,
+        "status": "open"
+      },
+      {
+        "id": "fs_02",
+        "name": "浸毁的令纸",
+        "description": "被茶汤浸毁的逐出令至今压在祠堂偏厅案牍堆下，上面积了三本宗谱。所有人知道它在哪，没有人翻它，没有人扔掉它。",
+        "chapter": 1,
+        "status": "open"
+      },
+      {
+        "id": "fs_03",
+        "name": "族规对人有别",
+        "description": "刻碑弟子在竹册末页写下的五个字——族规对人有别。余墨写成，字迹细浅，没有描第二遍，等待兑现。",
+        "chapter": 1,
+        "status": "open"
+      }
+    ]
   },
-  "review_checkpoints": [],
-  "chapter_meta": {},
+  "review_checkpoints": [
+    {
+      "chapter": 1,
+      "score": 89,
+      "date": "2026-05-04",
+      "notes": "第1章审查通过（89分）"
+    }
+  ],
+  "chapter_meta": {
+    "0001": {
+      "hook": {
+        "type": "悬念钩",
+        "content": "石碑上三指宽的空隙/被茶汤浸毁却三年未执行的逐出令/刻碑弟子发现族规有别的规律",
+        "strength": "strong"
+      },
+      "pattern": {
+        "opening": "描写开场（刻碑）",
+        "hook": "悬念钩",
+        "emotion_rhythm": "低沉→压抑（全程持续）",
+        "info_density": "高（通过POV独白与回忆承载大量背景信息）"
+      },
+      "ending": {
+        "time": "清晨",
+        "location": "祠堂石碑前",
+        "emotion": "压抑的平静（扣上扣子，继续刻）"
+      }
+    }
+  },
   "strand_tracker": {
     "last_quest_chapter": 0,
     "last_fire_chapter": 0,
-    "last_constellation_chapter": 0,
-    "current_dominant": "quest",
-    "chapters_since_switch": 0,
-    "history": []
+    "last_constellation_chapter": 1,
+    "current_dominant": "constellation",
+    "chapters_since_switch": 1,
+    "history": [
+      {
+        "chapter": 1,
+        "strand": "constellation",
+        "reason": "聚焦沈氏权力结构、石碑体制、族规不公，通过功能性POV揭示世界观暗面",
+        "switch_occurred": true
+      }
+    ]
   }
 }
