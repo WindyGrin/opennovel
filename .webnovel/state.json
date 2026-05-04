@@ -32,9 +32,9 @@
     "cultivation_subtiers": ""
   },
   "progress": {
-    "current_chapter": 2,
-    "total_words": 4531,
-    "last_updated": "2026-05-04 23:00:00",
+    "current_chapter": 3,
+    "total_words": 6795,
+    "last_updated": "2026-05-04 23:30:00",
     "volumes_completed": [],
     "current_volume": 1,
     "volumes_planned": [
@@ -54,13 +54,13 @@
     },
     "location": {
       "current": "苍渊·沈氏家族·别院",
-      "last_chapter": 2
+      "last_chapter": 3
     },
     "family": {
       "father": "沈怀远",
       "father_role": "沈氏戒律长老",
       "mother": "早逝",
-      "father_relation": "沉默的守护者。第2章清晨来别院送族报和手写便条（「我明日去矿脉。你自己吃饭。」），全程不交谈，纸上余温冰凉。读族报后拇指深深按压「荒嬉」二字旁的纸角。"
+      "father_relation": "沉默的守护者。第3章揭示内心世界：三年前故意打翻茶盏浸毁逐出令，借「描红退步」为由与沈安过招被枯枝击败后形成父子沉默默契——「以后在外人面前别用树枝」「那用什么」「什么都不用」。深知儿子真实实力远超表面，以沉默保护。次日赴矿脉调查地脉异常与星汉阁抢单。"
     },
     "key_characters": {
       "xiao_changhe": {
@@ -177,36 +177,36 @@
       "type": "角色",
       "canonical_name": "老石匠",
       "tier": "装饰",
-      "desc": "沈氏祠堂后的老石匠，磨了一辈子刻刀。对刻碑弟子的疑问只回了一句「加件衣服，碑前风大」，看似冷淡实则保护。",
+      "desc": "沈氏祠堂后的老石匠，磨了一辈子刻刀。第3章结尾沈怀远与其隐晦对话——「最近风大，注意保暖」「你也是，长老」——叫长老没加姓氏，暗示其地位特殊：可能极高或极老，或两者都是。",
       "first_appearance": 1,
-      "last_appearance": 1
+      "last_appearance": 3
     },
     "shen_huaiyuan": {
       "id": "shen_huaiyuan",
       "type": "角色",
       "canonical_name": "沈怀远",
       "tier": "重要",
-      "desc": "沈氏戒律长老，沈安之父。三年前大执事宣读逐出令时打翻茶盏，借茶汤浸毁令纸，使逐出令三年未执行。表面严厉实则护子。第2章：清晨来别院送族报和手写便条（「我明日去矿脉。你自己吃饭。」），全程沉默不交谈，内心沉重。",
+      "desc": "沈氏戒律长老，沈安之父。第3章首次以其内心视角叙事：身居戒律长老之位却对族规执行不公深感自我分裂；三年前故意打翻茶盏浸毁逐出令；借「描红退步」为由与沈安过招被枯枝击败，此后形成父子沉默默契。次日将赴矿脉。",
       "first_appearance": 1,
-      "last_appearance": 2
+      "last_appearance": 3
     },
     "shen_chongwu": {
       "id": "shen_chongwu",
       "type": "角色",
       "canonical_name": "沈崇武",
       "tier": "重要",
-      "desc": "沈氏大长老，卷1主要对手。掌控沈氏十二长老体制的核心人物。族规体系的实际维护者。第2章：族报上引用其训词「外域之毒，侵在荒嬉」。",
+      "desc": "沈氏大长老，卷1主要对手。掌控沈氏十二长老体制的核心人物。第3章：族报训词措辞从「不可不察」升级为「当及早戒」，附新规各房自查怠惰消沉子弟——不点名但直指沈安。沈怀远确认所有无关之事终将关联到沈崇武。",
       "first_appearance": 1,
-      "last_appearance": 2
+      "last_appearance": 3
     },
     "shen_an": {
       "id": "shen_an",
       "type": "角色",
       "canonical_name": "沈安",
       "tier": "主角",
-      "desc": "玄霄巅峰大佬假死逃到苍渊，当戒律长老的躺平儿子。第2章首次直接出场：每日倚靠青石柱感知天地气机，能从细微震动和声响中解读周围人物的情绪与行为。即便「没有修炼」也能精准感知族内各种细节。",
+      "desc": "玄霄巅峰大佬假死逃到苍渊，当戒律长老的躺平儿子。第3章通过沈怀远回忆揭示：六岁起精确控制描红作业量维持「留观后效」档；父子切磋中用一根手指长的枯枝击败父亲并精准指出其左脚踩位偏差半寸；此后形成父子沉默默契——在外人面前不显露任何实力。",
       "first_appearance": 1,
-      "last_appearance": 2
+      "last_appearance": 3
     },
     "lao_sun": {
       "id": "lao_sun",
@@ -234,6 +234,69 @@
       "desc": "沈氏族中传讯专用纸，浸浆时经人手描过薄薄窥痕气机。接收者可感应纸面残留的道痕余温，读取书写者的情绪状态。",
       "first_appearance": 2,
       "last_appearance": 2
+    },
+    "lao_guanjia": {
+      "id": "lao_guanjia",
+      "type": "角色",
+      "canonical_name": "老管家",
+      "tier": "装饰",
+      "desc": "沈氏管家，服役三十年。三年前沈怀远打翻茶盏后，从此倒茶永远把茶盏放在桌子正中间。知道的事比想说的多。",
+      "first_appearance": 3,
+      "last_appearance": 3
+    },
+    "da_zhishi": {
+      "id": "da_zhishi",
+      "type": "角色",
+      "canonical_name": "大执事",
+      "tier": "装饰",
+      "desc": "沈氏族会大执事，三年前宣读沈安逐出令时被沈怀远打翻茶盏浸毁令纸，折了两次令纸后说「待明日再议」——给了沈怀远争取时间的空间。",
+      "first_appearance": 3,
+      "last_appearance": 3
+    },
+    "miaohong_jilu": {
+      "id": "miaohong_jilu",
+      "type": "物件",
+      "canonical_name": "描红记录",
+      "tier": "装饰",
+      "desc": "沈安六岁起十二年的描红作业，码在沈怀远书房东墙木格中。从每年六叠递减到去年两叠，精确控制作业量以留在「留观后效」档。其中一页描了三次道痕起手势：太深→太浅→刚好擦边。",
+      "first_appearance": 3,
+      "last_appearance": 3
+    },
+    "kuangmai_shen": {
+      "id": "kuangmai_shen",
+      "type": "地点",
+      "canonical_name": "沈氏矿脉",
+      "tier": "装饰",
+      "desc": "沈氏家族领地内的矿脉。第3章沈怀远计划次日前往，因两件事：铁脊山脉飞舟航线被星汉阁抢了单大宗运单；矿上有人说最近地脉深处的气机不大对劲。",
+      "first_appearance": 3,
+      "last_appearance": 3
+    },
+    "feizhou_hangxian": {
+      "id": "feizhou_hangxian",
+      "type": "物件",
+      "canonical_name": "飞舟航线",
+      "tier": "装饰",
+      "desc": "铁脊山脉的飞舟货运航线，沈氏与砥砺宗、星汉阁竞争的大宗运输通道。第3章提及星汉阁抢了沈氏一单大宗运单。",
+      "first_appearance": 3,
+      "last_appearance": 3
+    },
+    "jielv_tang": {
+      "id": "jielv_tang",
+      "type": "势力",
+      "canonical_name": "戒律堂",
+      "tier": "装饰",
+      "desc": "沈氏族内执掌戒律的机构，沈怀远任戒律长老。每月逐出弟子名册由其管理，但族规的执行力度对不同房头并不平等——主脉弟子从未出现在逐出名册上。",
+      "first_appearance": 3,
+      "last_appearance": 3
+    },
+    "zu_bao": {
+      "id": "zu_bao",
+      "type": "物件",
+      "canonical_name": "沈氏族报",
+      "tier": "装饰",
+      "desc": "沈氏内部传讯用族报，头版照例为沈崇武训词。第3章训词措辞从「不可不察」升级为「当及早戒」，并附新规要求各房自查怠惰消沉子弟报族会审议——暗指沈安。",
+      "first_appearance": 2,
+      "last_appearance": 3
     }
   },
   "relationships": {
@@ -248,7 +311,7 @@
       "from": "shen_huaiyuan",
       "to": "shen_an",
       "type": "父子",
-      "description": "戒律长老沈怀远与其独子沈安。三年前沈怀远当众打翻茶盏保护儿子免于被逐出家族",
+      "description": "戒律长老沈怀远与其独子沈安。三年前沈怀远当众打翻茶盏保护儿子免于被逐出家族。曾借「描红退步」为由与沈安过招试探实力，被沈安用一根手指长的枯枝击败。此后形成父子沉默默契——「以后在外人面前别用树枝」「那用什么」「什么都不用」。两人每次对话都像打精确的太极拳，互相绕开却力道清晰。",
       "first_chapter": 1
     },
     "rel_03": {
@@ -264,6 +327,34 @@
       "type": "暗中感知",
       "description": "沈安通过震动与回响精确感知老孙的生活细节——撞钟晚了、走路步数、喝酒原因、儿子捡石头。老孙不知道有人能感知到这一切。整座青石城知道老孙秘密的只有三个人，沈安是第四个。",
       "first_chapter": 2
+    },
+    "rel_05": {
+      "from": "shen_huaiyuan",
+      "to": "lao_guanjia",
+      "type": "默契",
+      "description": "三年前茶盏事件后，老管家从此倒茶永远把茶盏放在桌子正中间。沈怀远不知道老管家到底知道多少，但沈家能当三十年管家的知道的事比想说的多。",
+      "first_chapter": 3
+    },
+    "rel_06": {
+      "from": "shen_huaiyuan",
+      "to": "shen_chongwu",
+      "type": "对立/警惕",
+      "description": "沈怀远深知所有看起来没有关联的事最后都会关联到沈崇武。身为戒律长老却对沈崇武推动的族规体系心存质疑，表面上执行规矩，暗中保护儿子免于被逐出。",
+      "first_chapter": 3
+    },
+    "rel_07": {
+      "from": "da_zhishi",
+      "to": "shen_huaiyuan",
+      "type": "配合/默契",
+      "description": "三年前族会上宣读逐出令被茶汤浸毁后，大执事把令纸折了两次说「待明日再议」——给了沈怀远争取时间的空间。",
+      "first_chapter": 3
+    },
+    "rel_08": {
+      "from": "shen_huaiyuan",
+      "to": "lao_shijiang",
+      "type": "微妙的尊重",
+      "description": "第3章结尾沈怀远从祠堂出来时对老石匠说「最近风大，注意保暖。」老石匠回「你也是，长老。」——叫长老没加姓氏，暗示其地位特殊。两人对话简短却意味深长。",
+      "first_chapter": 3
     }
   },
   "disambiguation_warnings": [],
@@ -279,7 +370,7 @@
         "id": "thread_01",
         "name": "逐出令之谜",
         "type": "主线索",
-        "description": "三年前沈安被逐出令所涉，因沈怀远打翻茶盏令纸被浸毁，逐出令至今未执行。祠堂石碑上留有三指宽空隙——对应沈安的名字。压在案牍下的浸毁令纸三年无人翻动。",
+        "description": "三年前沈安被逐出令所涉，因沈怀远打翻茶盏令纸被浸毁，逐出令至今未执行。第3章沈怀远深夜回祠堂确认浸毁令纸仍在——压在案牍堆中，茶渍已干三年。「只要还在，就有被重新翻开的一天。」",
         "first_chapter": 1,
         "status": "active"
       },
@@ -289,6 +380,22 @@
         "type": "暗线",
         "description": "刻碑弟子通过对比碑上名字与族谱，发现碑上刻入的名字无一出自十二长老房头——「族规对人有别」",
         "first_chapter": 1,
+        "status": "active"
+      },
+      {
+        "id": "thread_03",
+        "name": "沈崇武的压力收紧",
+        "type": "对抗线",
+        "description": "沈崇武通过族报训词逐步施压：上月「不可不察」→第3章「当及早戒」+新规各房自查怠惰消沉子弟。措辞升级、制度跟进，节奏在加快。沈怀远确认所有无关之事终将关联到沈崇武。",
+        "first_chapter": 1,
+        "status": "active"
+      },
+      {
+        "id": "thread_04",
+        "name": "矿脉与气机异常",
+        "type": "支线索",
+        "description": "第3章沈怀远计划赴矿脉——两件事：铁脊山脉飞舟航线被星汉阁抢了单大宗运单；矿上有人说最近地脉深处的气机不大对劲。两件事看似无关。",
+        "first_chapter": 3,
         "status": "active"
       }
     ],
@@ -313,6 +420,27 @@
         "description": "刻碑弟子在竹册末页写下的五个字——族规对人有别。余墨写成，字迹细浅，没有描第二遍，等待兑现。",
         "chapter": 1,
         "status": "open"
+      },
+      {
+        "id": "fs_04",
+        "name": "矿脉气机异常",
+        "description": "矿上有人说最近地脉深处的气机不大对劲。与星汉阁抢单看似无关，但沈怀远知道所有看起来没有关联的事最后都会关联到同一个人——沈崇武。",
+        "chapter": 3,
+        "status": "open"
+      },
+      {
+        "id": "fs_05",
+        "name": "老石匠的身份",
+        "description": "老石匠叫沈怀远「长老」但不加姓氏。在沈家这样的人只有两种：地位高到不用加，或辈分老到懒得加。沈怀远不知道老石匠属于哪一种——「可能两者都是」。",
+        "chapter": 3,
+        "status": "open"
+      },
+      {
+        "id": "fs_06",
+        "name": "令纸未被遗忘",
+        "description": "深夜沈怀远回祠堂确认浸毁令纸仍在。触了一下茶渍边缘——「纸是凉的。三年前茶盏翻倒的时候茶是烫的。」只要还在，就有被重新翻开的一天。",
+        "chapter": 3,
+        "status": "open"
       }
     ]
   },
@@ -328,6 +456,12 @@
       "score": 88,
       "date": "2026-05-04",
       "notes": "第2章审查通过（88分）"
+    },
+    {
+      "chapter": 3,
+      "score": 94,
+      "date": "2026-05-04",
+      "notes": "第3章审查通过（94分）"
     }
   ],
   "chapter_meta": {
@@ -366,11 +500,29 @@
         "location": "别院廊下→灶房",
         "emotion": "沉默的清醒（看完门缝裂缝，走向灶房）"
       }
+    },
+    "0003": {
+      "hook": {
+        "type": "冲突升温钩",
+        "content": "族报训词措辞从「不可不察」升级为「当及早戒」，新规各房自查怠惰消沉子弟——虽不点名但直指沈安；沈怀远内心世界首次全景曝光",
+        "strength": "strong"
+      },
+      "pattern": {
+        "opening": "细节描写开场（族报/名册/描红记录）",
+        "hook": "冲突升温钩",
+        "emotion_rhythm": "沉重→温情回忆→压抑→沉默坚定",
+        "info_density": "极高（沈怀远内心独白承载密集信息，每句话双重解读）"
+      },
+      "ending": {
+        "time": "深夜",
+        "location": "祠堂门口（老石匠小石房前）",
+        "emotion": "沉默的警觉与孤独的坚持"
+      }
     }
   },
   "strand_tracker": {
     "last_quest_chapter": 0,
-    "last_fire_chapter": 2,
+    "last_fire_chapter": 3,
     "last_constellation_chapter": 1,
     "current_dominant": "fire",
     "chapters_since_switch": 1,
@@ -386,6 +538,12 @@
         "strand": "fire",
         "reason": "首次以沈安直接视角叙事，聚焦其日常感知生活与超常能力展示，锚定主角人设",
         "switch_occurred": true
+      },
+      {
+        "chapter": 3,
+        "strand": "fire",
+        "reason": "以沈怀远视角深入父子关系——描红记录、切磋失败、茶盏事件、沉默默契层层揭示父爱的幽深与克制；权力结构系情感叙事的背景板，核心是严父用沉默守护儿子的个人命运",
+        "switch_occurred": false
       }
     ]
   }
