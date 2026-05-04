@@ -32,9 +32,9 @@
     "cultivation_subtiers": ""
   },
   "progress": {
-    "current_chapter": 1,
-    "total_words": 2500,
-    "last_updated": "2026-05-04 00:00:00",
+    "current_chapter": 2,
+    "total_words": 4531,
+    "last_updated": "2026-05-04 23:00:00",
     "volumes_completed": [],
     "current_volume": 1,
     "volumes_planned": [
@@ -53,14 +53,14 @@
       "bottleneck": "封印压制真实修为"
     },
     "location": {
-      "current": "苍渊·沈氏家族",
-      "last_chapter": 1
+      "current": "苍渊·沈氏家族·别院",
+      "last_chapter": 2
     },
     "family": {
       "father": "沈怀远",
-      "father_role": "家族戒律长老",
+      "father_role": "沈氏戒律长老",
       "mother": "早逝",
-      "father_relation": "严父与不争气儿子的极致反差，父亲曾试图教训儿子反被打败，在外只能吃哑巴亏"
+      "father_relation": "沉默的守护者。第2章清晨来别院送族报和手写便条（「我明日去矿脉。你自己吃饭。」），全程不交谈，纸上余温冰凉。读族报后拇指深深按压「荒嬉」二字旁的纸角。"
     },
     "key_characters": {
       "xiao_changhe": {
@@ -170,7 +170,7 @@
       "tier": "装饰",
       "desc": "沈氏祠堂石碑前的刻碑人，功能性POV角色，已在碑前刻了两年。发现族谱规律——碑上名字无一出自长老房头。写下「族规对人有别」。",
       "first_appearance": 1,
-      "last_appearance": 1
+      "last_appearance": 2
     },
     "lao_shijiang": {
       "id": "lao_shijiang",
@@ -186,27 +186,54 @@
       "type": "角色",
       "canonical_name": "沈怀远",
       "tier": "重要",
-      "desc": "沈氏戒律长老，沈安之父。三年前大执事宣读逐出令时打翻茶盏，借茶汤浸毁令纸，使逐出令三年未执行。表面严厉实则护子。",
+      "desc": "沈氏戒律长老，沈安之父。三年前大执事宣读逐出令时打翻茶盏，借茶汤浸毁令纸，使逐出令三年未执行。表面严厉实则护子。第2章：清晨来别院送族报和手写便条（「我明日去矿脉。你自己吃饭。」），全程沉默不交谈，内心沉重。",
       "first_appearance": 1,
-      "last_appearance": 1
+      "last_appearance": 2
     },
     "shen_chongwu": {
       "id": "shen_chongwu",
       "type": "角色",
       "canonical_name": "沈崇武",
       "tier": "重要",
-      "desc": "沈氏大长老，卷1主要对手。掌控沈氏十二长老体制的核心人物。族规体系的实际维护者。",
+      "desc": "沈氏大长老，卷1主要对手。掌控沈氏十二长老体制的核心人物。族规体系的实际维护者。第2章：族报上引用其训词「外域之毒，侵在荒嬉」。",
       "first_appearance": 1,
-      "last_appearance": 1
+      "last_appearance": 2
     },
     "shen_an": {
       "id": "shen_an",
       "type": "角色",
       "canonical_name": "沈安",
       "tier": "主角",
-      "desc": "玄霄巅峰大佬假死逃到苍渊，当戒律长老的躺平儿子。本章仅间接提及——三年前因「三季描红不过关」被逐出令所涉，但因父亲沈怀远打翻茶盏，逐出令三年未执行，石碑上始终空着他的名字。",
+      "desc": "玄霄巅峰大佬假死逃到苍渊，当戒律长老的躺平儿子。第2章首次直接出场：每日倚靠青石柱感知天地气机，能从细微震动和声响中解读周围人物的情绪与行为。即便「没有修炼」也能精准感知族内各种细节。",
       "first_appearance": 1,
-      "last_appearance": 1
+      "last_appearance": 2
+    },
+    "lao_sun": {
+      "id": "lao_sun",
+      "type": "角色",
+      "canonical_name": "老孙",
+      "tier": "装饰",
+      "desc": "沈氏撞钟人。儿子在矿上捡了块石头（非灵石但儿子坚信是），每晚放在枕边。因心中多了不确定的事，晨钟经常晚半刻。酒后撞钟。走路五十二步从钟楼脚到撞木位。",
+      "first_appearance": 2,
+      "last_appearance": 2
+    },
+    "qing_shizhu": {
+      "id": "qing_shizhu",
+      "type": "物件",
+      "canonical_name": "青石柱",
+      "tier": "装饰",
+      "desc": "沈家别院廊下的老青石柱。沈安每日倚靠的位置，柱身上有一道被后背蹭了两年磨出的浅痕，石面光滑如水。沈安借此感知地脉气机走向与天痕之脉。",
+      "first_appearance": 2,
+      "last_appearance": 2
+    },
+    "daotian_zhi": {
+      "id": "daotian_zhi",
+      "type": "物件",
+      "canonical_name": "道痕纸",
+      "tier": "装饰",
+      "desc": "沈氏族中传讯专用纸，浸浆时经人手描过薄薄窥痕气机。接收者可感应纸面残留的道痕余温，读取书写者的情绪状态。",
+      "first_appearance": 2,
+      "last_appearance": 2
     }
   },
   "relationships": {
@@ -230,6 +257,13 @@
       "type": "观察/共情",
       "description": "刻碑弟子每日刻碑，注意到应属于沈安的空隙始终空白，暗中记下「族规对人有别」",
       "first_chapter": 1
+    },
+    "rel_04": {
+      "from": "shen_an",
+      "to": "lao_sun",
+      "type": "暗中感知",
+      "description": "沈安通过震动与回响精确感知老孙的生活细节——撞钟晚了、走路步数、喝酒原因、儿子捡石头。老孙不知道有人能感知到这一切。整座青石城知道老孙秘密的只有三个人，沈安是第四个。",
+      "first_chapter": 2
     }
   },
   "disambiguation_warnings": [],
@@ -288,6 +322,12 @@
       "score": 89,
       "date": "2026-05-04",
       "notes": "第1章审查通过（89分）"
+    },
+    {
+      "chapter": 2,
+      "score": 88,
+      "date": "2026-05-04",
+      "notes": "第2章审查通过（88分）"
     }
   ],
   "chapter_meta": {
@@ -308,19 +348,43 @@
         "location": "祠堂石碑前",
         "emotion": "压抑的平静（扣上扣子，继续刻）"
       }
+    },
+    "0002": {
+      "hook": {
+        "type": "感知展示钩",
+        "content": "沈安倚靠青石柱，仅凭震动/回响/笔迹余温精准解读祠堂刻碑、钟楼撞钟、父亲便条背后的完整人事",
+        "strength": "strong"
+      },
+      "pattern": {
+        "opening": "场景描写开场（别院廊下/青石柱）",
+        "hook": "能力展示钩",
+        "emotion_rhythm": "平静→层层揭露→深沉（表面平静，暗流涌动）",
+        "info_density": "极高（每句话都是两层——表面感知与深层解读）"
+      },
+      "ending": {
+        "time": "午前",
+        "location": "别院廊下→灶房",
+        "emotion": "沉默的清醒（看完门缝裂缝，走向灶房）"
+      }
     }
   },
   "strand_tracker": {
     "last_quest_chapter": 0,
-    "last_fire_chapter": 0,
+    "last_fire_chapter": 2,
     "last_constellation_chapter": 1,
-    "current_dominant": "constellation",
+    "current_dominant": "fire",
     "chapters_since_switch": 1,
     "history": [
       {
         "chapter": 1,
         "strand": "constellation",
         "reason": "聚焦沈氏权力结构、石碑体制、族规不公，通过功能性POV揭示世界观暗面",
+        "switch_occurred": true
+      },
+      {
+        "chapter": 2,
+        "strand": "fire",
+        "reason": "首次以沈安直接视角叙事，聚焦其日常感知生活与超常能力展示，锚定主角人设",
         "switch_occurred": true
       }
     ]
