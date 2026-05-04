@@ -32,9 +32,9 @@
     "cultivation_subtiers": ""
   },
   "progress": {
-    "current_chapter": 3,
-    "total_words": 6795,
-    "last_updated": "2026-05-04 23:30:00",
+    "current_chapter": 5,
+    "total_words": 10373,
+    "last_updated": "2026-05-04 18:19:39",
     "volumes_completed": [],
     "current_volume": 1,
     "volumes_planned": [
@@ -54,7 +54,7 @@
     },
     "location": {
       "current": "苍渊·沈氏家族·别院",
-      "last_chapter": 3
+      "last_chapter": 5
     },
     "family": {
       "father": "沈怀远",
@@ -204,9 +204,9 @@
       "type": "角色",
       "canonical_name": "沈安",
       "tier": "主角",
-      "desc": "玄霄巅峰大佬假死逃到苍渊，当戒律长老的躺平儿子。第3章通过沈怀远回忆揭示：六岁起精确控制描红作业量维持「留观后效」档；父子切磋中用一根手指长的枯枝击败父亲并精准指出其左脚踩位偏差半寸；此后形成父子沉默默契——在外人面前不显露任何实力。",
+      "desc": "玄霄巅峰大佬假死逃到苍渊，当戒律长老的躺平儿子。第4-5章：被沈青萝从隐蔽位置系统观察三天，其非视觉感知精度、日光追踪、道痕感知被量化——感知精度超刻痕境六倍。",
       "first_appearance": 1,
-      "last_appearance": 3
+      "last_appearance": 5
     },
     "lao_sun": {
       "id": "lao_sun",
@@ -224,7 +224,7 @@
       "tier": "装饰",
       "desc": "沈家别院廊下的老青石柱。沈安每日倚靠的位置，柱身上有一道被后背蹭了两年磨出的浅痕，石面光滑如水。沈安借此感知地脉气机走向与天痕之脉。",
       "first_appearance": 2,
-      "last_appearance": 2
+      "last_appearance": 5
     },
     "daotian_zhi": {
       "id": "daotian_zhi",
@@ -296,7 +296,25 @@
       "tier": "装饰",
       "desc": "沈氏内部传讯用族报，头版照例为沈崇武训词。第3章训词措辞从「不可不察」升级为「当及早戒」，并附新规要求各房自查怠惰消沉子弟报族会审议——暗指沈安。",
       "first_appearance": 2,
-      "last_appearance": 3
+      "last_appearance": 4
+    },
+    "qing_luo": {
+      "id": "qing_luo",
+      "type": "角色",
+      "canonical_name": "沈青萝",
+      "tier": "重要",
+      "desc": "沈氏年轻一代天才少女，刻痕境。八岁起用日轨表规划研究时间。第4章在族学名册发现沈安排名倒数第五后开始系统观察他，用竹简记录数据。发现沈安表面懒散实则道痕感知精度超刻痕境六倍。研究风格冷静理性，但兴奋时笔尖会抖。后续在家族会议上公开念出沈安日轨图导致全族误会两人恋爱。第5章决定拿日轨图找沈怀远摊牌。",
+      "first_appearance": 4,
+      "last_appearance": 5
+    },
+    "rigui_tu": {
+      "id": "rigui_tu",
+      "type": "物品",
+      "canonical_name": "日轨图",
+      "tier": "装饰",
+      "desc": "沈青萝自创的环形时间分析图。十二时辰均分一圈，每个观察节点标注状态变化，所有规律与异常一目了然。用于系统研究沈安的日常行为规律，后续成为家族会议上揭露沈安隐藏实力的关键物证。",
+      "first_appearance": 5,
+      "last_appearance": 5
     }
   },
   "relationships": {
@@ -355,6 +373,13 @@
       "type": "微妙的尊重",
       "description": "第3章结尾沈怀远从祠堂出来时对老石匠说「最近风大，注意保暖。」老石匠回「你也是，长老。」——叫长老没加姓氏，暗示其地位特殊。两人对话简短却意味深长。",
       "first_chapter": 3
+    },
+    "rel_09": {
+      "from": "qing_luo",
+      "to": "shen_an",
+      "type": "系统观察/研究",
+      "description": "沈青萝发现沈安排名倒数第五后开始从隐蔽位置系统观察他。用日轨图和竹简记录其日常行为数据，发现其表面懒散实则道痕感知精度超刻痕境六倍。全族只有她在意这件事。第5章决定拿日轨图找沈怀远摊牌，原因是她发现三年前打翻茶盏的正是沈怀远。",
+      "first_chapter": 4
     }
   },
   "disambiguation_warnings": [],
@@ -396,6 +421,14 @@
         "type": "支线索",
         "description": "第3章沈怀远计划赴矿脉——两件事：铁脊山脉飞舟航线被星汉阁抢了单大宗运单；矿上有人说最近地脉深处的气机不大对劲。两件事看似无关。",
         "first_chapter": 3,
+        "status": "active"
+      },
+      {
+        "id": "thread_05",
+        "name": "沈青萝的调查",
+        "type": "人物驱动线",
+        "description": "第4-5章：天才少女沈青萝发现沈安排名反常后开始系统观察，用日轨图量化揭示其隐藏实力远超表面。发现沈怀远三年前打翻茶盏的真相后，决定拿日轨图找他对峙——一台冷静的研究机器撞上一个父亲藏了三年的秘密。",
+        "first_chapter": 4,
         "status": "active"
       }
     ],
@@ -462,6 +495,18 @@
       "score": 94,
       "date": "2026-05-04",
       "notes": "第3章审查通过（94分）"
+    },
+    {
+      "chapter": 4,
+      "score": 95,
+      "date": "2026-05-04",
+      "notes": "第4章审查通过（95分）——沈青萝POV首次出场，智识钩+精确细节反差，追读力强"
+    },
+    {
+      "chapter": 5,
+      "score": 95,
+      "date": "2026-05-04",
+      "notes": "第5章审查通过（95分）——日轨图数据化揭秘，能力揭示钩精准，承接点（找沈怀远）张力拉满"
     }
   ],
   "chapter_meta": {
@@ -518,14 +563,50 @@
         "location": "祠堂门口（老石匠小石房前）",
         "emotion": "沉默的警觉与孤独的坚持"
       }
+    },
+    "0004": {
+      "hook": {
+        "type": "智识钩",
+        "content": "天才少女沈青萝发现族学倒数第五的沈安身上藏着无法解释的精确——日光跟踪精度半指、非视觉感知、族报背面情绪波动",
+        "strength": "strong"
+      },
+      "pattern": {
+        "opening": "叙事开场（翻名册发现异常）",
+        "hook": "智识钩",
+        "emotion_rhythm": "平静→好奇→专注→警觉",
+        "info_density": "high"
+      },
+      "ending": {
+        "time": "傍晚→次日",
+        "location": "沈安别院外",
+        "emotion": "被激发的求知欲"
+      }
+    },
+    "0005": {
+      "hook": {
+        "type": "能力揭示钩",
+        "content": "沈青萝日轨图揭示沈安道痕感知精度超刻痕境六倍——衣褶计测脉动周期、半息锁定天顶残迹",
+        "strength": "strong"
+      },
+      "pattern": {
+        "opening": "分析叙事开场（画日轨图）",
+        "hook": "能力揭示钩",
+        "emotion_rhythm": "疑惑→兴奋→紧张→决心",
+        "info_density": "high"
+      },
+      "ending": {
+        "time": "傍晚",
+        "location": "祠堂石碑旁",
+        "emotion": "下定决心拿日轨图找沈怀远摊牌"
+      }
     }
   },
   "strand_tracker": {
     "last_quest_chapter": 0,
-    "last_fire_chapter": 3,
+    "last_fire_chapter": 5,
     "last_constellation_chapter": 1,
     "current_dominant": "fire",
-    "chapters_since_switch": 1,
+    "chapters_since_switch": 3,
     "history": [
       {
         "chapter": 1,
@@ -544,7 +625,20 @@
         "strand": "fire",
         "reason": "以沈怀远视角深入父子关系——描红记录、切磋失败、茶盏事件、沉默默契层层揭示父爱的幽深与克制；权力结构系情感叙事的背景板，核心是严父用沉默守护儿子的个人命运",
         "switch_occurred": false
+      },
+      {
+        "chapter": 4,
+        "strand": "fire",
+        "reason": "首次以沈青萝视角叙事，天才少女系统观察沈安——从名册发现异常到日光追踪精度到族报背面情绪感知，全篇通过他者之眼揭示主角隐藏深度，纯人物驱动",
+        "switch_occurred": false
+      },
+      {
+        "chapter": 5,
+        "strand": "fire",
+        "reason": "沈青萝观察第三日——日轨图数据化揭示沈安道痕感知精度超刻痕境六倍。冷静理性的天才少女兴奋到笔尖颤抖，决定拿证据找沈怀远摊牌。核心驱动：一个父亲的秘密+一个天才的研究碰撞",
+        "switch_occurred": false
       }
     ]
-  }
+  },
+  "_migrated_to_sqlite": true
 }
