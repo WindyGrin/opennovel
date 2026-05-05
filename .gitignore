@@ -37,7 +37,10 @@ node_modules/
 .webnovel/index.db
 .webnovel/index.db.bak
 .webnovel/state.json.bak
+.webnovel/style_samples.db
+.webnovel/vectors.db
 .webnovel/observability/
+.opencode/skills/webnovel-write-batch/.batch_state.json
 .opencode/.webnovel-current-project
 
 # --- IDE / 编辑器 ---

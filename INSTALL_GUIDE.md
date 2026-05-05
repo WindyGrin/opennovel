@@ -1,6 +1,6 @@
 # Webnovel Writer 本地 Embedding + Reranker 安装手册
 
-> 📢 **本项目为 AI 小说共创项目**（《仙界逃兵》）。如果你只想参与共创讨论，**不需要**搭建本地环境——直接阅读 [CONTRIBUTING.md](CONTRIBUTING.md) 即可。如果你想基于此框架创作自己的小说，请继续阅读本手册。
+> 📢 **本项目为 AI 小说共创项目**（《满级重修，每一项刚好及格就行》）。如果你只想参与共创讨论，**不需要**搭建本地环境——直接阅读 [CONTRIBUTING.md](CONTRIBUTING.md) 即可。如果你想基于此框架创作自己的小说，请继续阅读本手册。
 >
 > 适用 GPU: NVIDIA RTX 4080 16GB | 系统: Windows 10/11 | 日期: 2026-05-02
 
