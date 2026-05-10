@@ -14,6 +14,7 @@
 import argparse
 import asyncio
 import json
+import re
 import sys
 from pathlib import Path
 from typing import Any, Dict, List, Optional
@@ -143,16 +144,24 @@ class PublisherManager:
         return chapters
 
     def _extract_chapter_title(self, path: Path) -> str:
-        """从文件名提取章节标题
+        """从正文第一行提取章节标题，回退到文件名
 
-        "第0044章-遗迹深处" → "遗迹深处"
+        "# 第1章 族谱" → "族谱"
         "第0001章-地摊买书" → "地摊买书"
         """
+        try:
+            with open(path, encoding='utf-8') as f:
+                first_line = f.readline().strip()
+            m = re.match(r'^#\s*第[\dB]+章\s+(.+)', first_line)
+            if m:
+                return m.group(1).strip()
+        except Exception:
+            pass
+        # 回退：从文件名提取
         stem = path.stem
         if "-" in stem:
             parts = stem.split("-", 1)
-            if len(parts) > 1:
-                return parts[1].strip()
+            return parts[1].strip()
         return stem
 
     def _clean_chapter_content(self, content: str) -> str:
