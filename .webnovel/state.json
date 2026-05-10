@@ -31,9 +31,9 @@
     "cultivation_subtiers": ""
   },
   "progress": {
-    "current_chapter": 21,
-    "total_words": 35626,
-    "last_updated": "2026-05-07",
+    "current_chapter": 22,
+    "total_words": 37809,
+    "last_updated": "2026-05-10 21:48:13",
     "volumes_completed": [],
     "current_volume": 1,
     "volumes_planned": [
@@ -53,7 +53,7 @@
     },
     "location": {
       "current": "苍渊·铁脊山脉·砥砺宗·丁号修炼舍",
-      "last_chapter": 21
+      "last_chapter": 22
     },
     "family": {
       "father": "沈怀远",
@@ -205,7 +205,7 @@
       "tier": "主角",
       "desc": "玄霄巅峰大佬假死逃到苍渊，当戒律长老的躺平儿子。第2章首次以直接视角出场：倚靠青石柱感知地脉气机，仅凭振动回响/笔迹余温精准解读周遭人事。第3章揭示三岁即可感知地下道痕矿脉。第4-5章被沈青萝系统观察并反利用其观测做自我校验。第9章被父亲送到门口，告别时拆穿父亲每一层伪装。第10章走三天山路到达砥砺宗——前世布下的天痕之脉种子已长成覆盖全苍渊的感知网络。",
       "first_appearance": 1,
-      "last_appearance": 21
+      "last_appearance": 22
     },
     "lao_sun": {
       "id": "lao_sun",
@@ -383,9 +383,9 @@
       "type": "角色",
       "canonical_name": "铁骊",
       "tier": "重要",
-      "desc": "砥砺宗宗主。笔锋硬得像拳头砸出来的。宗训一个字：磨。三年前给沈怀远写信——「他日若有难处，砥砺宗不欠沈家一个位置。」第8章沈怀远翻出此信。第10章站在山门直道尽头审视沈安，第一句话：「一个月。磨不动——退回沈家。」但说这话时按住衣角掩饰握拳冲动——他在期待沈安不好磨。",
+      "desc": "砥砺宗宗主。笔锋硬得像拳头砸出来的。宗训一个字：磨。三年前给沈怀远写信——「他日若有难处，砥砺宗不欠沈家一个位置。」第8章沈怀远翻出此信。第10章站在山门直道尽头审视沈安，第一句话：「一个月。磨不动——退回沈家。」但说这话时按住衣角掩饰握拳冲动——他在期待沈安不好磨。第22章六页质问被沈安用宗规原文一击瓦解——三十年前亲手抄入章程的'不强制'三字反过来否定了她三十年建立的默认体系。",
       "first_appearance": 9,
-      "last_appearance": 21
+      "last_appearance": 22
     },
     "dilizong_shanmen": {
       "id": "dilizong_shanmen",
@@ -619,12 +619,12 @@
       "description": "第20章铁骊写信称'怀远兄'——三十年通信中第二次用此称呼。信中详述沈安异常表现，末句提问'你当年在学宫是怎么跟这种人打交道的'。沈怀远读三遍后决定不回——回复即承认他送过去的不是磨不动的废物。",
       "first_chapter": 21
     },
-    "rel_21": {
-      "from": "shaizi",
-      "to": "yinge",
-      "type": "线人/隶属",
-      "description": "筛子是影阁在砥砺宗后山的眼线，以捡矿渣为掩护替影阁挑矿样。第20章收到从虚海运来的黑石，上刻影阁标记——影阁包裹投递线正式进入砥砺宗范围。",
-      "first_chapter": 21
+    "rel_22": {
+      "from": "shen_an",
+      "to": "tie_li",
+      "type": "权力翻转/认知颠覆",
+      "description": "第22章铁骊六页质问围剿沈安的'刚好及格'。前三问沈安沉默，第四问起身从书架取下《砥砺宗宗规》，翻到第三卷附录第二节末句——'宗门不强制超量修炼'。铁骊三十年默认被自己亲手抄入章程的一行字瓦解。沈安翻书无需查找——从书脊到目标页零停顿。铁骊随后意识到：如果第一天把话问完，今天就不是她在问沈安，是沈安在问她。她把剩余两页问题锁进抽屉。",
+      "first_chapter": 22
     }
   },
   "disambiguation_warnings": [],
@@ -906,6 +906,12 @@
       "score": 90,
       "date": "2026-05-05",
       "notes": "第11章审查通过（90分）——沈安上路三天，前世天痕之脉种子揭秘。铁骊初见「一个月。磨不动——退回沈家」——按压衣角细节暴露期待。第一章卷完美收束。"
+    },
+    {
+      "chapter": 22,
+      "score": 96,
+      "date": "2026-05-10",
+      "notes": "第22章审查通过（96分，consistency:98, continuity:89, OOC:100）——铁骊六页质问→沈安宗规原文一击翻盘。权力翻转精准有力，三十年默认被一行字瓦解。翻书零停顿的细节暗示超常记忆/前世所知。后山新观察者出现推进影阁线。极高信息密度与情感冲击。"
     }
   ],
   "chapter_meta": {
@@ -1269,6 +1275,26 @@
         "emotion": "孤独的决断（不想再错一次——但这次不退会不会后果更大）"
       }
     },
+    "0022": {
+      "0022": {
+        "hook": {
+          "type": "权力翻转钩",
+          "content": "铁骊六页质问被沈安用宗规原文一击瓦解",
+          "strength": "strong"
+        },
+        "pattern": {
+          "opening": "对话开场",
+          "hook": "权力翻转钩",
+          "emotion_rhythm": "压迫→沉默→逆转→震动→余韵",
+          "info_density": "极高"
+        },
+        "ending": {
+          "time": "同日午后→傍晚",
+          "location": "砥砺宗偏殿→后山",
+          "emotion": "被看穿的不安"
+        }
+      }
+    },
     "0021": {
       "hook": {
         "type": "通信钩+悬疑钩",
@@ -1291,9 +1317,9 @@
   "strand_tracker": {
     "last_quest_chapter": 19,
     "last_fire_chapter": 21,
-    "last_constellation_chapter": 20,
-    "current_dominant": "fire",
-    "chapters_since_switch": 1,
+    "last_constellation_chapter": 22,
+    "current_dominant": "constellation",
+    "chapters_since_switch": 0,
     "history": [
       {
         "chapter": 1,
@@ -1416,9 +1442,9 @@
         "switch_occurred": true
       },
       {
-        "chapter": 21,
-        "strand": "fire",
-        "reason": "铁骊给沈怀远写信——称'怀远兄'，三十年通信第二次。沈怀远读三遍不回。影阁包裹抵达后山。火线：情感与悬疑双线收束——通信穿起父子线+宗门线，影阁威胁逼近。",
+        "chapter": 22,
+        "strand": "constellation",
+        "reason": "铁骊六页宗规质问→沈安以宗规原文一击翻盘。权力翻转：三十年前铁骊亲手抄入章程的'不强制'否定她三十年建立的默认体系。宗规是体制的缩影——沈安用体制自身的文字拆解了体制执行者的权威。星丛线：体制与其执行者的内在矛盾被揭示。",
         "switch_occurred": true
       }
     ]
