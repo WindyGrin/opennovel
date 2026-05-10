@@ -31,9 +31,9 @@
     "cultivation_subtiers": ""
   },
   "progress": {
-    "current_chapter": 23,
+    "current_chapter": 24,
     "total_words": 37809,
-    "last_updated": "2026-05-10 22:23:11",
+    "last_updated": "2026-05-10 22:49:21",
     "volumes_completed": [],
     "current_volume": 1,
     "volumes_planned": [
@@ -1330,6 +1330,26 @@
           "time": "上午",
           "location": "砥砺宗偏殿",
           "emotion": "铁骊察觉暗流"
+        }
+      }
+    },
+    "0024": {
+      "0024": {
+        "hook": {
+          "type": "疑心钩",
+          "content": "庚子辈三人私下讨论沈安——赵砚说出\"我不知道\"，陈广说出\"他不是废物\"",
+          "strength": "strong"
+        },
+        "pattern": {
+          "opening": "宿舍沉默对峙",
+          "hook": "疑心钩",
+          "emotion_rhythm": "低→压抑→警觉",
+          "info_density": "medium"
+        },
+        "ending": {
+          "time": "深夜",
+          "location": "山门方向",
+          "emotion": "警觉——铁骊发现打火石碎屑"
         }
       }
     }
