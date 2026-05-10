@@ -31,9 +31,9 @@
     "cultivation_subtiers": ""
   },
   "progress": {
-    "current_chapter": 22,
+    "current_chapter": 23,
     "total_words": 37809,
-    "last_updated": "2026-05-10 21:48:13",
+    "last_updated": "2026-05-10 22:23:11",
     "volumes_completed": [],
     "current_volume": 1,
     "volumes_planned": [
@@ -1311,6 +1311,26 @@
         "time": "同夜",
         "location": "沈家戒律堂→后山→丁号舍灰岩柱",
         "emotion": "多线收束的警觉（明天会查这件事——今夜还有两个时辰的气机需要计数）"
+      }
+    },
+    "0023": {
+      "0023": {
+        "hook": {
+          "type": "悬念钩",
+          "content": "后山黑石符号+采石人失踪",
+          "strength": "medium"
+        },
+        "pattern": {
+          "opening": "对峙开场",
+          "hook": "悬念钩",
+          "emotion_rhythm": "紧张→迷惑→沉静",
+          "info_density": "medium"
+        },
+        "ending": {
+          "time": "上午",
+          "location": "砥砺宗偏殿",
+          "emotion": "铁骊察觉暗流"
+        }
       }
     }
   },
