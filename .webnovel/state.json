@@ -31,9 +31,9 @@
     "cultivation_subtiers": ""
   },
   "progress": {
-    "current_chapter": 24,
-    "total_words": 37809,
-    "last_updated": "2026-05-10 23:24:47",
+    "current_chapter": 30,
+    "total_words": 45200,
+    "last_updated": "2026-05-11 22:43:08",
     "volumes_completed": [],
     "current_volume": 1,
     "volumes_planned": [
@@ -53,7 +53,7 @@
     },
     "location": {
       "current": "苍渊·铁脊山脉·砥砺宗·丁号修炼舍",
-      "last_chapter": 24
+      "last_chapter": 30
     },
     "family": {
       "father": "沈怀远",
@@ -1346,13 +1346,107 @@
         "location": "庚子舍→经籍阁→偏殿→山门",
         "emotion": "铁骊发现打火石碎屑——外界消息将至的紧张与期待"
       }
+    },
+    "0025": {
+      "hook": {
+        "type": "认知转折钩",
+        "content": "铁骊第三遍翻沈安十二天日志——石板背面指甲划痕精确对应最难道痕位置，第一天就知道每道痕在哪里。描红没有茧痕——没多花过一分力气。后山黑石符号超苍渊认知。写下'他在等谁'、'等他自己说'——从天赋解释升级为'他在评估我值不值得认真对待'。",
+        "strength": "strong"
+      },
+      "pattern": {
+        "opening": "叙事开场（铁骊翻石板日志）",
+        "hook": "认知转折钩",
+        "emotion_rhythm": "专注分析→震撼发现→悬疑→决定的平静",
+        "info_density": "极高（三层信息：石板物理证据+后山黑石+铁骊内心转折）"
+      },
+      "ending": {
+        "time": "清晨",
+        "location": "铁骊偏殿石窗前",
+        "emotion": "克制的等待（她等了三十年才等到一个让她写'继续'的人。继续等两天不算什么。）"
+      }
+    },
+    "0026": {
+      "hook": {
+        "type": "阴谋钩",
+        "content": "沈崇武策划族会反击——议程第五项添加'特别案例审议：沈安'。用族规第六卷'三年不进者暂缓资源'处理沈安——不逐出但断资源。核心诉求：让全族看到他处理戒律长老之子和底层子弟用同一标准。画两个套圈标注不确定的靶子。",
+        "strength": "strong"
+      },
+      "pattern": {
+        "opening": "叙事开场（沈崇武书房拆报告）",
+        "hook": "阴谋钩",
+        "emotion_rhythm": "冷静分析→算计→不确定→锁定目标",
+        "info_density": "high"
+      },
+      "ending": {
+        "time": "午后",
+        "location": "沈崇武书房抽屉前",
+        "emotion": "冷静的盘算（不是长老在思考族务——是一个在算距离的人）"
+      }
+    },
+    "0027": {
+      "hook": {
+        "type": "政治博弈钩",
+        "content": "沈崇武找二房沈伯渊拉票。沈伯渊指出依据漏洞——'拿入宗之前的事处理入宗之后的他'。有条件支持但要求实话：'你到底要不要逐出。'回答不逐出后建议再找沈青萝爷爷。最后一句：'你最好不要让他发现你是在欺负自己本家的人。'",
+        "strength": "strong"
+      },
+      "pattern": {
+        "opening": "场景开场（沈伯渊沏茶——水滚三滚七息节奏）",
+        "hook": "政治博弈钩",
+        "emotion_rhythm": "礼节性铺垫→实质对话→微妙的距离→警告收束",
+        "info_density": "high"
+      },
+      "ending": {
+        "time": "午后",
+        "location": "沈伯渊书房",
+        "emotion": "被点破后的沉默（沈伯渊一辈子不当面说重话——这句话已经是他资格范围内最重的一句）"
+      }
+    },
+    "0028": {
+      "hook": {
+        "type": "能力展示钩",
+        "content": "砥砺宗阶段性小比——沈安三十六道标准痕全部达标，不多描一道。评审评语只有'全部达标'四字。全宗围观无人挑出错处。赵砚意识到'刚好够'就是满分——满分的标准不在宗规任何一条里。采石人连续第三天缺席。",
+        "strength": "strong"
+      },
+      "pattern": {
+        "opening": "场景开场（晨练台划成三块比试区）",
+        "hook": "能力展示钩",
+        "emotion_rhythm": "期待→平静表演→无聊（观众散去）→震撼（评审结果）",
+        "info_density": "medium-high"
+      },
+      "ending": {
+        "time": "小比结束后",
+        "location": "丁号舍灰岩柱",
+        "emotion": "平静的完成（太阳从柱子左边挪到右边——和半个月前第一天一样多）"
+      }
+    },
+    "0029": {
+      "hook": {
+        "type": "逆转钩",
+        "content": "质疑声起——核心非作弊而是两套规则碰撞。铁骊开放查阅全部评审石板。十七人来查，赵砚首个看完就走。质疑声最大的纪平比较后承认多描六道反添瑕疵。三张附纸无一张指出错误。质疑平息的原因不是沉默——是石板本身。",
+        "strength": "strong"
+      },
+      "pattern": {
+        "opening": "冲突开场（质疑声从三人扩散到全宗）",
+        "hook": "逆转钩",
+        "emotion_rhythm": "质疑升温→开放查阅→沉默对比→自我认知→平息",
+        "info_density": "high"
+      },
+      "ending": {
+        "time": "日落后",
+        "location": "铁骊偏殿案前",
+        "emotion": "确认的平静（第三十六道痕平滑如靠过透明规尺——这种平滑她见过，在第三位核心弟子描了一年的石板上）"
+      }
+    },
+    "0030": {
+      "hook_type": "情感钩+决策钩",
+      "ending_emotion": "释然的坚定"
     }
   },
   "strand_tracker": {
-    "last_quest_chapter": 23,
+    "last_quest_chapter": 29,
     "last_fire_chapter": 24,
-    "last_constellation_chapter": 22,
-    "current_dominant": "fire",
+    "last_constellation_chapter": 30,
+    "current_dominant": "constellation",
     "chapters_since_switch": 0,
     "history": [
       {
@@ -1497,6 +1591,42 @@
         "chapter": 24,
         "strand": "fire",
         "reason": "庚子辈三人私下议论、温小鹿复刻手法、铁骊领悟'规矩是底'——沈安的影响从单一事件扩散为全宗层面的认知地震。火线：多角色被沈安存在本身引发内在反思。结尾山门打火石碎屑——外界消息即将介入。",
+        "switch_occurred": true
+      },
+      {
+        "chapter": 25,
+        "strand": "constellation",
+        "reason": "铁骊第三遍翻日志全景曝光——从天赋认知升级为'他在评估我值不值得认真对待'。后山黑石符号超苍渊认知。星丛线：权力/权威者面对超越自身体系的存在时，从观察走向敬畏的等待。",
+        "switch_occurred": true
+      },
+      {
+        "chapter": 26,
+        "strand": "constellation",
+        "reason": "沈崇武策划族会反击——用族规处理沈安以洗刷'大长老的当然'标签。星丛线：沈氏权力博弈正式进入主动操作阶段，两个套圈标记不确定的靶子。",
+        "switch_occurred": false
+      },
+      {
+        "chapter": 27,
+        "strand": "constellation",
+        "reason": "沈崇武拉拢沈伯渊——族内权力协商。沈伯渊指出依据漏洞，有条件支持。建议再找沈青萝爷爷。星丛线：权力结构内部的意见分化与博弈。",
+        "switch_occurred": false
+      },
+      {
+        "chapter": 28,
+        "strand": "quest",
+        "reason": "砥砺宗小比——沈安三十六道痕全部达标，'刚好够'即满分。任务线：在宗门体制内以实力回应评估，从被动防御到主动证明。全宗见证无一人挑错。",
+        "switch_occurred": true
+      },
+      {
+        "chapter": 29,
+        "strand": "quest",
+        "reason": "质疑与查阅——铁骊开放石板以事实平息争议。纪平等人认知转变。任务线：通过透明化事实从宗门争议中胜出，不是靠话语而是靠石板。",
+        "switch_occurred": false
+      },
+      {
+        "chapter": 30,
+        "strand": "constellation",
+        "reason": "铁骊登后山铁梯——三十年时间线收束。与沈怀远三十年首次回信修复关系。决定'继续'——承认体系底下有自己没看透的东西。星丛线：权力者的自我认知革命与三十年时间闭环。",
         "switch_occurred": true
       }
     ]

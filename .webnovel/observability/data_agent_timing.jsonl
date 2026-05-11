@@ -65,3 +65,35 @@
 {"timestamp": "2026-05-11T21:58:34.283190", "tool_name": "index_manager:save-chapter-reading-power", "success": true, "elapsed_ms": 27}
 {"timestamp": "2026-05-11T21:58:46.595280", "tool_name": "index_manager:stats", "success": true, "elapsed_ms": 20}
 {"timestamp": "2026-05-11T21:58:49.649161", "tool_name": "index_manager:get-core-entities", "success": true, "elapsed_ms": 20}
+{"timestamp": "2026-05-11T22:33:32.412630", "tool_name": "index_manager:get-core-entities", "success": true, "elapsed_ms": 19}
+{"timestamp": "2026-05-11T22:33:46.624015", "tool_name": "index_manager:recent-appearances", "success": true, "elapsed_ms": 18}
+{"timestamp": "2026-05-11T22:33:57.307016", "tool_name": "index_manager:get-aliases", "success": false, "elapsed_ms": 18, "error_code": "NOT_FOUND", "error_message": "shen_an 没有别名"}
+{"timestamp": "2026-05-11T22:34:46.928528", "tool_name": "index_manager:get-by-alias", "success": true, "elapsed_ms": 18}
+{"timestamp": "2026-05-11T22:34:50.127937", "tool_name": "index_manager:get-by-alias", "success": false, "elapsed_ms": 18, "error_code": "NOT_FOUND", "error_message": "未找到别名: 沈伯渊"}
+{"timestamp": "2026-05-11T22:34:59.384886", "tool_name": "index_manager:get-by-alias", "success": false, "elapsed_ms": 18, "error_code": "NOT_FOUND", "error_message": "未找到别名: 纪平"}
+{"timestamp": "2026-05-11T22:35:02.433209", "tool_name": "index_manager:get-by-alias", "success": true, "elapsed_ms": 8}
+{"timestamp": "2026-05-11T22:35:05.595230", "tool_name": "index_manager:get-by-alias", "success": true, "elapsed_ms": 18}
+{"timestamp": "2026-05-11T22:37:01.539002", "tool_name": "index_manager:register-alias", "success": true, "elapsed_ms": 24}
+{"timestamp": "2026-05-11T22:37:05.511033", "tool_name": "index_manager:register-alias", "success": true, "elapsed_ms": 26}
+{"timestamp": "2026-05-11T22:37:34.575666", "tool_name": "index_manager:upsert-entity", "success": true, "elapsed_ms": 26}
+{"timestamp": "2026-05-11T22:37:42.559699", "tool_name": "index_manager:upsert-entity", "success": true, "elapsed_ms": 24}
+{"timestamp": "2026-05-11T22:41:31.456615", "tool_name": "index_manager:upsert-entity", "success": true, "elapsed_ms": 26}
+{"timestamp": "2026-05-11T22:41:31.573224", "tool_name": "index_manager:upsert-entity", "success": true, "elapsed_ms": 14}
+{"timestamp": "2026-05-11T22:41:31.682858", "tool_name": "index_manager:upsert-entity", "success": true, "elapsed_ms": 16}
+{"timestamp": "2026-05-11T22:41:31.787507", "tool_name": "index_manager:upsert-entity", "success": true, "elapsed_ms": 14}
+{"timestamp": "2026-05-11T22:41:31.903121", "tool_name": "index_manager:upsert-entity", "success": true, "elapsed_ms": 16}
+{"timestamp": "2026-05-11T22:41:32.008555", "tool_name": "index_manager:upsert-entity", "success": true, "elapsed_ms": 16}
+{"timestamp": "2026-05-11T22:41:32.121124", "tool_name": "index_manager:upsert-entity", "success": true, "elapsed_ms": 16}
+{"timestamp": "2026-05-11T22:42:08.004118", "tool_name": "index_manager:record-state-change", "success": true, "elapsed_ms": 25}
+{"timestamp": "2026-05-11T22:42:15.785120", "tool_name": "index_manager:record-state-change", "success": true, "elapsed_ms": 26}
+{"timestamp": "2026-05-11T22:42:20.863347", "tool_name": "index_manager:record-state-change", "success": true, "elapsed_ms": 26}
+{"timestamp": "2026-05-11T22:42:25.733523", "tool_name": "index_manager:record-state-change", "success": true, "elapsed_ms": 25}
+{"timestamp": "2026-05-11T22:42:34.853176", "tool_name": "index_manager:save-chapter-reading-power", "success": true, "elapsed_ms": 26}
+{"timestamp": "2026-05-11T22:42:39.914975", "tool_name": "index_manager:save-chapter-reading-power", "success": true, "elapsed_ms": 26}
+{"timestamp": "2026-05-11T22:42:44.802640", "tool_name": "index_manager:save-chapter-reading-power", "success": true, "elapsed_ms": 26}
+{"timestamp": "2026-05-11T22:42:49.830686", "tool_name": "index_manager:save-chapter-reading-power", "success": true, "elapsed_ms": 26}
+{"timestamp": "2026-05-11T22:42:55.167965", "tool_name": "index_manager:save-chapter-reading-power", "success": true, "elapsed_ms": 26}
+{"timestamp": "2026-05-11T22:43:00.637972", "tool_name": "index_manager:save-chapter-reading-power", "success": true, "elapsed_ms": 26}
+{"timestamp": "2026-05-11T22:43:08.709977", "tool_name": "state_manager.save_state", "success": true, "elapsed_ms": 6, "meta": {"lock_wait_ms": 0, "merge_ms": 0, "write_ms": 4, "sqlite_ms": 0, "save_failure": 0}}
+{"timestamp": "2026-05-11T22:43:08.717950", "tool_name": "state_manager:process-chapter", "success": true, "elapsed_ms": 20, "chapter": 30}
+{"timestamp": "2026-05-11T22:43:18.997940", "tool_name": "index_manager:stats", "success": true, "elapsed_ms": 18}

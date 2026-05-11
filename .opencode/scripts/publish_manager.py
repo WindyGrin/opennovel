@@ -165,10 +165,11 @@ class PublisherManager:
         return stem
 
     def _clean_chapter_content(self, content: str) -> str:
-        """清理章节内容"""
+        """清理章节内容，去除 frontmatter 和 markdown 标题行"""
         lines = content.splitlines()
         cleaned_lines: List[str] = []
         in_frontmatter = False
+        heading_skipped = False
 
         for line in lines:
             if line.strip() == "---":
@@ -176,9 +177,20 @@ class PublisherManager:
                 continue
             if in_frontmatter:
                 continue
+            # 跳过第一行 markdown 标题（如 "# 第22章 宗规"），避免发布到草稿箱正文中
+            if not heading_skipped:
+                if line.strip().startswith("# ") and re.match(
+                    r"^#\s*第[\dB]+章", line.strip()
+                ):
+                    heading_skipped = True
+                    continue
+                heading_skipped = True
             cleaned_lines.append(line)
 
-        return "\n".join(cleaned_lines).strip()
+        content = "\n".join(cleaned_lines).strip()
+        # 去除开头空行（标题行移除后留下）
+        content = re.sub(r"^\n+", "", content)
+        return content
 
     async def upload_chapters(
         self,
