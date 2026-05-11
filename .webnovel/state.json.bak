@@ -33,7 +33,7 @@
   "progress": {
     "current_chapter": 24,
     "total_words": 37809,
-    "last_updated": "2026-05-10 23:24:47",
+    "last_updated": "2026-05-10 23:24:39",
     "volumes_completed": [],
     "current_volume": 1,
     "volumes_planned": [
@@ -1337,19 +1337,19 @@
       "0024": {
         "hook": {
           "type": "疑心钩",
-          "content": "庚子辈私下议论无结论；温小鹿复刻沈安手法认清差距；铁骊领悟规矩是底；深夜山门打火石碎屑——送信人已至",
+          "content": "庚子辈三人私下讨论沈安——赵砚说出\"我不知道\"，陈广说出\"他不是废物\"",
           "strength": "strong"
         },
         "pattern": {
-          "opening": "余波开场——三弟子回舍沉默对峙",
-          "hook": "疑心钩——沈安到底是什么人？",
-          "emotion_rhythm": "沉默→不确定→认知颠覆→悬疑拉升",
-          "info_density": "high"
+          "opening": "宿舍沉默对峙",
+          "hook": "疑心钩",
+          "emotion_rhythm": "低→压抑→警觉",
+          "info_density": "medium"
         },
         "ending": {
           "time": "深夜",
-          "location": "砥砺宗山门方向",
-          "emotion": "铁骊发现打火石碎屑——外界消息将至的紧张"
+          "location": "山门方向",
+          "emotion": "警觉——铁骊发现打火石碎屑"
         }
       }
     }

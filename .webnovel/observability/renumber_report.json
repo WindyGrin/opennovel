@@ -1,0 +1,35 @@
+{
+  "chapter": "renumber",
+  "operation": "Ch2B消除 + 全章节重编号",
+  "mapping": "旧Ch2B→新Ch3, 旧Ch3→新Ch4, …, 旧Ch20→新Ch21",
+  "summary_files": {
+    "deleted": ["ch0002B.md"],
+    "created": ["ch0003.md (from old Ch2B)"],
+    "shifted": "ch0004~ch0021 (旧ch0003~ch0020内容移位, chapter号更新)"
+  },
+  "state_json": {
+    "review_checkpoints": "Ch2B→3, Ch3~10→4~11",
+    "chapter_meta": "新增0004(严父), 0004~0020移位至0005~0021, 总计21条",
+    "strand_tracker": "Ch2B条目chapter=2→3, 全局3+移位, last_fire=21",
+    "entity_descs": "第2B章→第3章 (shen_an, rel_02)",
+    "entity_appearances": "fa/la≥3且≤20: +1",
+    "protagonist_state": "last_chapter: 20→21",
+    "progress": "current_chapter: 21"
+  },
+  "index_db": {
+    "first_appearance_updates": 20,
+    "last_appearance_updates": 34,
+    "range_check": "仅移位3-20范围，≥22的未来章号不受影响",
+    "key_entities": {
+      "shen_an": "la: 20→21",
+      "shen_huaiyuan": "la: 20→21",
+      "tie_li": "la: 20→21",
+      "yinge": "la: 20→21",
+      "qing_luo": "fa: 4→5, la: 5→6",
+      "shen_chongwu": "la: 7→8"
+    }
+  },
+  "warnings": [],
+  "errors": [],
+  "status": "complete"
+}

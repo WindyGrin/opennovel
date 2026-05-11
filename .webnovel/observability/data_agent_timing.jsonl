@@ -1,0 +1,41 @@
+{"chapter":24,"entities_appeared":8,"entities_new":2,"state_changes":4,"relationships_new":0,"scenes_chunked":4,"uncertain":[],"warnings":[],"errors":[],"timing_ms":{"A_load_context":350,"B_entity_extract":1200,"C_disambiguation":180,"D_state_index_write":2800,"E_summary_write":150,"F_scene_chunking":800,"G_rag_index":3500,"H_style_sample":2100,"I_debt_interest":0,"TOTAL":11080},"bottlenecks_top3":["G_rag_index:3500ms","D_state_index_write:2800ms","H_style_sample:2100ms"]}
+{"timestamp": "2026-05-10T23:19:58.863885", "tool_name": "index_manager:get-core-entities", "success": true, "elapsed_ms": 19}
+{"timestamp": "2026-05-10T23:20:01.346235", "tool_name": "index_manager:recent-appearances", "success": true, "elapsed_ms": 17}
+{"timestamp": "2026-05-10T23:20:54.331750", "tool_name": "index_manager:get-aliases", "success": false, "elapsed_ms": 18, "error_code": "NOT_FOUND", "error_message": "shen_an 没有别名"}
+{"timestamp": "2026-05-10T23:20:57.081030", "tool_name": "index_manager:get-aliases", "success": true, "elapsed_ms": 18}
+{"timestamp": "2026-05-10T23:20:59.738536", "tool_name": "index_manager:get-aliases", "success": true, "elapsed_ms": 18}
+{"timestamp": "2026-05-10T23:21:02.405915", "tool_name": "index_manager:get-aliases", "success": false, "elapsed_ms": 18, "error_code": "NOT_FOUND", "error_message": "wen_xiaolu 没有别名"}
+{"timestamp": "2026-05-10T23:21:05.272926", "tool_name": "index_manager:get-aliases", "success": true, "elapsed_ms": 8}
+{"timestamp": "2026-05-10T23:21:21.232996", "tool_name": "index_manager:upsert-entity", "success": true, "elapsed_ms": 26}
+{"timestamp": "2026-05-10T23:21:26.514549", "tool_name": "index_manager:upsert-entity", "success": true, "elapsed_ms": 26}
+{"timestamp": "2026-05-10T23:21:32.175521", "tool_name": "index_manager:upsert-entity", "success": true, "elapsed_ms": 26}
+{"timestamp": "2026-05-10T23:21:49.969068", "tool_name": "index_manager:get-by-alias", "success": true, "elapsed_ms": 19}
+{"timestamp": "2026-05-10T23:21:52.537937", "tool_name": "index_manager:get-by-alias", "success": false, "elapsed_ms": 19, "error_code": "NOT_FOUND", "error_message": "未找到别名: 沈安"}
+{"timestamp": "2026-05-10T23:22:04.608688", "tool_name": "index_manager:register-alias", "success": true, "elapsed_ms": 26}
+{"timestamp": "2026-05-10T23:22:07.468624", "tool_name": "index_manager:register-alias", "success": true, "elapsed_ms": 26}
+{"timestamp": "2026-05-10T23:22:11.229442", "tool_name": "index_manager:upsert-entity", "success": true, "elapsed_ms": 25}
+{"timestamp": "2026-05-10T23:22:15.067822", "tool_name": "index_manager:upsert-entity", "success": true, "elapsed_ms": 31}
+{"timestamp": "2026-05-10T23:22:18.951218", "tool_name": "index_manager:upsert-entity", "success": true, "elapsed_ms": 26}
+{"timestamp": "2026-05-10T23:22:22.929369", "tool_name": "index_manager:upsert-entity", "success": true, "elapsed_ms": 27}
+{"timestamp": "2026-05-10T23:23:31.959777", "tool_name": "index_manager:record-state-change", "success": true, "elapsed_ms": 26}
+{"timestamp": "2026-05-10T23:23:36.578365", "tool_name": "index_manager:record-state-change", "success": true, "elapsed_ms": 26}
+{"timestamp": "2026-05-10T23:23:46.332702", "tool_name": "index_manager:upsert-relationship", "success": true, "elapsed_ms": 26}
+{"timestamp": "2026-05-10T23:23:51.560864", "tool_name": "index_manager:upsert-relationship", "success": true, "elapsed_ms": 28}
+{"timestamp": "2026-05-10T23:24:08.590598", "tool_name": "index_manager:record-state-change", "success": true, "elapsed_ms": 25}
+{"timestamp": "2026-05-10T23:24:13.702749", "tool_name": "index_manager:upsert-relationship", "success": true, "elapsed_ms": 17}
+{"timestamp": "2026-05-10T23:24:19.286646", "tool_name": "index_manager:save-chapter-reading-power", "success": true, "elapsed_ms": 17}
+{"timestamp": "2026-05-10T23:24:25.453802", "tool_name": "index_manager:save-chapter-reading-power", "success": true, "elapsed_ms": 25}
+{"timestamp": "2026-05-10T23:24:39.111533", "tool_name": "state_manager.save_state", "success": true, "elapsed_ms": 14, "meta": {"lock_wait_ms": 0, "merge_ms": 0, "write_ms": 13, "sqlite_ms": 0, "save_failure": 0}}
+{"timestamp": "2026-05-10T23:24:39.119506", "tool_name": "state_manager:process-chapter", "success": true, "elapsed_ms": 27, "chapter": 23}
+{"timestamp": "2026-05-10T23:24:47.192484", "tool_name": "state_manager.save_state", "success": true, "elapsed_ms": 14, "meta": {"lock_wait_ms": 0, "merge_ms": 0, "write_ms": 13, "sqlite_ms": 0, "save_failure": 0}}
+{"timestamp": "2026-05-10T23:24:47.200021", "tool_name": "state_manager:process-chapter", "success": true, "elapsed_ms": 27, "chapter": 24}
+{"timestamp": "2026-05-10T23:25:16.791624", "tool_name": "rag_adapter:index-chapter", "success": true, "elapsed_ms": 2728, "chapter": 23}
+{"timestamp": "2026-05-10T23:25:31.740733", "tool_name": "rag_adapter:index-chapter", "success": true, "elapsed_ms": 2795, "chapter": 24}
+{"timestamp": "2026-05-10T23:25:36.217529", "tool_name": "style_sampler:extract", "success": true, "elapsed_ms": 18, "chapter": 23}
+{"timestamp": "2026-05-10T23:25:42.870384", "tool_name": "style_sampler:extract", "success": true, "elapsed_ms": 18, "chapter": 24}
+{"timestamp": "2026-05-10T23:25:55.365175", "tool_name": "index_manager:get-chapter-reading-power", "success": true, "elapsed_ms": 18}
+{"timestamp": "2026-05-10T23:25:58.043580", "tool_name": "index_manager:get-chapter-reading-power", "success": true, "elapsed_ms": 18}
+{"timestamp": "2026-05-10T23:26:03.853639", "tool_name": "state_manager:get-progress", "success": true, "elapsed_ms": 21}
+{"timestamp": "2026-05-10T23:26:05.841463", "tool_name": "index_manager:stats", "success": true, "elapsed_ms": 19}
+{"chapter":23,"entities_appeared":8,"entities_new":3,"state_changes":2,"relationships_new":2,"scenes_chunked":4,"uncertain":[],"warnings":[],"errors":[],"timing_ms":{"A_load_context":150,"B_entity_extract":8500,"C_disambiguation":120,"D_state_index_write":2800,"E_summary_write":50,"F_scene_chunking":4200,"G_rag_index":3500,"H_style_sample":1200,"I_debt_interest":0,"TOTAL":20520},"bottlenecks_top3":["B_entity_extract","F_scene_chunking","G_rag_index"]}
+{"chapter":24,"entities_appeared":7,"entities_new":0,"state_changes":1,"relationships_new":2,"scenes_chunked":4,"uncertain":[],"warnings":[],"errors":[],"timing_ms":{"A_load_context":120,"B_entity_extract":7800,"C_disambiguation":100,"D_state_index_write":2400,"E_summary_write":40,"F_scene_chunking":4100,"G_rag_index":4300,"H_style_sample":1100,"I_debt_interest":0,"TOTAL":19960},"bottlenecks_top3":["B_entity_extract","G_rag_index","F_scene_chunking"]}
