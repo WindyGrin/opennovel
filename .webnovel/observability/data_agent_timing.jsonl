@@ -39,3 +39,29 @@
 {"timestamp": "2026-05-10T23:26:05.841463", "tool_name": "index_manager:stats", "success": true, "elapsed_ms": 19}
 {"chapter":23,"entities_appeared":8,"entities_new":3,"state_changes":2,"relationships_new":2,"scenes_chunked":4,"uncertain":[],"warnings":[],"errors":[],"timing_ms":{"A_load_context":150,"B_entity_extract":8500,"C_disambiguation":120,"D_state_index_write":2800,"E_summary_write":50,"F_scene_chunking":4200,"G_rag_index":3500,"H_style_sample":1200,"I_debt_interest":0,"TOTAL":20520},"bottlenecks_top3":["B_entity_extract","F_scene_chunking","G_rag_index"]}
 {"chapter":24,"entities_appeared":7,"entities_new":0,"state_changes":1,"relationships_new":2,"scenes_chunked":4,"uncertain":[],"warnings":[],"errors":[],"timing_ms":{"A_load_context":120,"B_entity_extract":7800,"C_disambiguation":100,"D_state_index_write":2400,"E_summary_write":40,"F_scene_chunking":4100,"G_rag_index":4300,"H_style_sample":1100,"I_debt_interest":0,"TOTAL":19960},"bottlenecks_top3":["B_entity_extract","G_rag_index","F_scene_chunking"]}
+{"timestamp": "2026-05-11T21:50:18.750928", "tool_name": "index_manager:get-core-entities", "success": true, "elapsed_ms": 10}
+{"timestamp": "2026-05-11T21:50:21.801585", "tool_name": "index_manager:recent-appearances", "success": true, "elapsed_ms": 19}
+{"timestamp": "2026-05-11T21:51:01.907428", "tool_name": "index_manager:upsert-entity", "success": true, "elapsed_ms": 25}
+{"timestamp": "2026-05-11T21:51:08.414364", "tool_name": "index_manager:upsert-entity", "success": true, "elapsed_ms": 26}
+{"timestamp": "2026-05-11T21:51:15.466704", "tool_name": "index_manager:upsert-entity", "success": true, "elapsed_ms": 26}
+{"timestamp": "2026-05-11T21:51:27.782392", "tool_name": "index_manager:upsert-entity", "success": true, "elapsed_ms": 27}
+{"timestamp": "2026-05-11T21:51:35.833775", "tool_name": "index_manager:upsert-entity", "success": true, "elapsed_ms": 26}
+{"timestamp": "2026-05-11T21:51:42.419848", "tool_name": "index_manager:upsert-entity", "success": true, "elapsed_ms": 25}
+{"timestamp": "2026-05-11T21:51:49.228314", "tool_name": "index_manager:upsert-entity", "success": true, "elapsed_ms": 26}
+{"timestamp": "2026-05-11T21:51:55.551876", "tool_name": "index_manager:upsert-entity", "success": true, "elapsed_ms": 27}
+{"timestamp": "2026-05-11T21:52:01.801893", "tool_name": "index_manager:upsert-entity", "success": true, "elapsed_ms": 25}
+{"timestamp": "2026-05-11T21:52:10.004912", "tool_name": "index_manager:register-alias", "success": true, "elapsed_ms": 27}
+{"timestamp": "2026-05-11T21:52:13.913777", "tool_name": "index_manager:register-alias", "success": true, "elapsed_ms": 26}
+{"timestamp": "2026-05-11T21:52:17.823819", "tool_name": "index_manager:register-alias", "success": true, "elapsed_ms": 26}
+{"timestamp": "2026-05-11T21:53:04.849809", "tool_name": "index_manager:record-state-change", "success": true, "elapsed_ms": 26}
+{"timestamp": "2026-05-11T21:53:09.723548", "tool_name": "index_manager:record-state-change", "success": true, "elapsed_ms": 27}
+{"timestamp": "2026-05-11T21:53:14.815694", "tool_name": "index_manager:record-state-change", "success": true, "elapsed_ms": 27}
+{"timestamp": "2026-05-11T21:53:20.765893", "tool_name": "index_manager:upsert-relationship", "success": true, "elapsed_ms": 27}
+{"timestamp": "2026-05-11T21:53:26.306585", "tool_name": "index_manager:upsert-relationship", "success": true, "elapsed_ms": 26}
+{"timestamp": "2026-05-11T21:53:31.890720", "tool_name": "index_manager:upsert-relationship", "success": true, "elapsed_ms": 25}
+{"timestamp": "2026-05-11T21:57:15.194694", "tool_name": "index_manager:save-chapter-reading-power", "success": true, "elapsed_ms": 25}
+{"timestamp": "2026-05-11T21:58:25.674483", "tool_name": "index_manager:save-chapter-reading-power", "success": true, "elapsed_ms": 26}
+{"timestamp": "2026-05-11T21:58:29.870667", "tool_name": "index_manager:save-chapter-reading-power", "success": true, "elapsed_ms": 25}
+{"timestamp": "2026-05-11T21:58:34.283190", "tool_name": "index_manager:save-chapter-reading-power", "success": true, "elapsed_ms": 27}
+{"timestamp": "2026-05-11T21:58:46.595280", "tool_name": "index_manager:stats", "success": true, "elapsed_ms": 20}
+{"timestamp": "2026-05-11T21:58:49.649161", "tool_name": "index_manager:get-core-entities", "success": true, "elapsed_ms": 20}

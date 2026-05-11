@@ -53,7 +53,7 @@
     },
     "location": {
       "current": "苍渊·铁脊山脉·砥砺宗·丁号修炼舍",
-      "last_chapter": 22
+      "last_chapter": 24
     },
     "family": {
       "father": "沈怀远",
@@ -1276,23 +1276,21 @@
       }
     },
     "0022": {
-      "0022": {
-        "hook": {
-          "type": "权力翻转钩",
-          "content": "铁骊六页质问被沈安用宗规原文一击瓦解",
-          "strength": "strong"
-        },
-        "pattern": {
-          "opening": "对话开场",
-          "hook": "权力翻转钩",
-          "emotion_rhythm": "压迫→沉默→逆转→震动→余韵",
-          "info_density": "极高"
-        },
-        "ending": {
-          "time": "同日午后→傍晚",
-          "location": "砥砺宗偏殿→后山",
-          "emotion": "被看穿的不安"
-        }
+      "hook": {
+        "type": "权力翻转钩",
+        "content": "铁骊六页宗规质问围剿沈安——前三问沉默，第四问触及'精进'定义时沈安起身走向书架，直接取下宗规翻到第三卷附录第二节——'宗门不强制超量修炼'。铁骊三十年亲手抄入章程的'不强制'三字反过来否定了她三十年建立的默认体系。权力瞬间翻转。铁骊扣下剩余两页：'如果第一天把话问完了，今天就不是她在问沈安了。'",
+        "strength": "strong"
+      },
+      "pattern": {
+        "opening": "对话开场（铁骊传话召见）",
+        "hook": "权力翻转钩",
+        "emotion_rhythm": "压迫→沉默→翻转→震动→余韵",
+        "info_density": "极高"
+      },
+      "ending": {
+        "time": "午后→傍晚",
+        "location": "砥砺宗偏殿",
+        "emotion": "被颠覆后的沉默（殿门一直开着，风从后山灌进来）"
       }
     },
     "0021": {
@@ -1314,51 +1312,47 @@
       }
     },
     "0023": {
-      "0023": {
-        "hook": {
-          "type": "悬念钩",
-          "content": "沈安蹲地观测蚂蚁与地脉痕，无视三弟子质问；铁骊销毁提问纸改笔记为继续",
-          "strength": "medium"
-        },
-        "pattern": {
-          "opening": "冲突开场——三弟子堵路质问",
-          "hook": "悬念钩——沈安在看什么？偏殿发生了什么？",
-          "emotion_rhythm": "紧张→困惑→悬疑",
-          "info_density": "high"
-        },
-        "ending": {
-          "time": "同日上午",
-          "location": "砥砺宗偏殿",
-          "emotion": "铁骊写下继续——持续观察的悬疑"
-        }
+      "hook": {
+        "type": "悬念钩",
+        "content": "三弟子堵路追问偏殿内容——沈安蹲地观测蚂蚁沿道痕迁徙，通过蚂蚁绕行察觉'后山今天有人来过'。偏殿内铁骊裁碎剩余两页质问，笔记写'继续'。监督师兄在后山筛子常蹲处发现虚海黑石刻有陌生符号——你不认识但立刻知道不该出现在这里。铁骊意识到沈安昨天门口停步不是犹豫——是感知到矿渣堆后有人。",
+        "strength": "strong"
+      },
+      "pattern": {
+        "opening": "冲突开场（三弟子修炼舍外堵路）",
+        "hook": "悬念钩（沈安在看什么？偏殿发生了什么？黑石从哪里来？）",
+        "emotion_rhythm": "紧张→困惑→悬疑拉升",
+        "info_density": "极高"
+      },
+      "ending": {
+        "time": "同日上午",
+        "location": "修炼舍外→偏殿",
+        "emotion": "铁骊写下'继续'——从质问转向持久观察"
       }
     },
     "0024": {
-      "0024": {
-        "hook": {
-          "type": "疑心钩",
-          "content": "庚子辈私下议论无结论；温小鹿复刻沈安手法认清差距；铁骊领悟规矩是底；深夜山门打火石碎屑——送信人已至",
-          "strength": "strong"
-        },
-        "pattern": {
-          "opening": "余波开场——三弟子回舍沉默对峙",
-          "hook": "疑心钩——沈安到底是什么人？",
-          "emotion_rhythm": "沉默→不确定→认知颠覆→悬疑拉升",
-          "info_density": "high"
-        },
-        "ending": {
-          "time": "深夜",
-          "location": "砥砺宗山门方向",
-          "emotion": "铁骊发现打火石碎屑——外界消息将至的紧张"
-        }
+      "hook": {
+        "type": "疑心钩+承上启下钩",
+        "content": "庚子舍三人沉默对峙：赵砚说出'我不知道'，陈广说出'他不是废物'。温小鹿闭眼复刻沈安翻宗规手法三次才成功——认清差距。铁骊领悟三十年前自己写的宗规：规矩是底不是尺。笔记从'继续'改为'继续等'。深夜山门未关——石板缝中打火石碎屑，只有送信人才随身携带。",
+        "strength": "strong"
+      },
+      "pattern": {
+        "opening": "余波开场（三弟子回舍沉默对峙）",
+        "hook": "疑心钩（沈安到底是什么人？）",
+        "emotion_rhythm": "沉默→不确定→认知颠覆→悬疑拉升",
+        "info_density": "极高"
+      },
+      "ending": {
+        "time": "深夜",
+        "location": "庚子舍→经籍阁→偏殿→山门",
+        "emotion": "铁骊发现打火石碎屑——外界消息将至的紧张与期待"
       }
     }
   },
   "strand_tracker": {
-    "last_quest_chapter": 19,
-    "last_fire_chapter": 21,
+    "last_quest_chapter": 23,
+    "last_fire_chapter": 24,
     "last_constellation_chapter": 22,
-    "current_dominant": "constellation",
+    "current_dominant": "fire",
     "chapters_since_switch": 0,
     "history": [
       {
@@ -1482,9 +1476,27 @@
         "switch_occurred": true
       },
       {
+        "chapter": 21,
+        "strand": "constellation",
+        "reason": "铁骊写信称沈怀远'怀远兄'——三十年通信第二次。沈怀远读三遍不回——回复即承认。影阁虚海黑石抵达后山筛子手中。星丛线：两方权力者（铁骊+沈怀远）通过通信建立信任纽带，影阁势力在后山正式落地。",
+        "switch_occurred": true
+      },
+      {
         "chapter": 22,
         "strand": "constellation",
         "reason": "铁骊六页宗规质问→沈安以宗规原文一击翻盘。权力翻转：三十年前铁骊亲手抄入章程的'不强制'否定她三十年建立的默认体系。宗规是体制的缩影——沈安用体制自身的文字拆解了体制执行者的权威。星丛线：体制与其执行者的内在矛盾被揭示。",
+        "switch_occurred": true
+      },
+      {
+        "chapter": 23,
+        "strand": "quest",
+        "reason": "三弟子堵路被沈安以观测蚂蚁化解——通过地脉痕拐弯察觉后山有人。后山虚海黑石被发现。任务线：沈安以非战斗方式继续瓦解同门质疑，同时后山探索持续深入。影阁包裹线在两个POV中同步发现。",
+        "switch_occurred": true
+      },
+      {
+        "chapter": 24,
+        "strand": "fire",
+        "reason": "庚子辈三人私下议论、温小鹿复刻手法、铁骊领悟'规矩是底'——沈安的影响从单一事件扩散为全宗层面的认知地震。火线：多角色被沈安存在本身引发内在反思。结尾山门打火石碎屑——外界消息即将介入。",
         "switch_occurred": true
       }
     ]
