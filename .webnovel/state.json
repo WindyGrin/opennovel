@@ -31,9 +31,9 @@
     "cultivation_subtiers": ""
   },
   "progress": {
-    "current_chapter": 30,
-    "total_words": 45200,
-    "last_updated": "2026-05-11 22:43:08",
+    "current_chapter": 31,
+    "total_words": 47200,
+    "last_updated": "2026-05-12 21:49:41",
     "volumes_completed": [],
     "current_volume": 1,
     "volumes_planned": [
@@ -53,7 +53,7 @@
     },
     "location": {
       "current": "苍渊·铁脊山脉·砥砺宗·丁号修炼舍",
-      "last_chapter": 30
+      "last_chapter": 31
     },
     "family": {
       "father": "沈怀远",
@@ -476,6 +476,33 @@
       "desc": "砥砺宗后山铁制阶梯，通往矿渣区和采石场。沈安第一天即绕路至此观察采石人路线。铁骊从出入记录注意到此刻意行为并注'非随意行为'。",
       "first_appearance": 12,
       "last_appearance": 21
+    },
+    "meng_zheng": {
+      "id": "meng_zheng",
+      "type": "角色",
+      "canonical_name": "孟征",
+      "tier": "装饰",
+      "desc": "砥砺宗庚字辈首席师兄，修行进度榜前十坐了五年。开口先摆数据。第31章被铁骊召入偏殿议沈安去留——按宗规支持保留，但被铁骊问住：不是合不合格，是你们想不想留。",
+      "first_appearance": 31,
+      "last_appearance": 31
+    },
+    "cao_huan": {
+      "id": "cao_huan",
+      "type": "角色",
+      "canonical_name": "曹桓",
+      "tier": "装饰",
+      "desc": "砥砺宗修炼舍日常监督师兄。第31章被铁骊召入偏殿——补充沈安考核达标没理由退。但铁骊追问你们想不想留时沉默。",
+      "first_appearance": 31,
+      "last_appearance": 31
+    },
+    "chen_xu": {
+      "id": "chen_xu",
+      "type": "角色",
+      "canonical_name": "陈序",
+      "tier": "装饰",
+      "desc": "砥砺宗庚字辈年轻女弟子，四位监督中年纪最轻，往常极少主动发言。第31章被铁骊追问时罕见开口——观察到沈安描完三十六道后手停在石板边——不是收笔是克制。铁骊在记事上写下'她看见了克制'。",
+      "first_appearance": 31,
+      "last_appearance": 31
     }
   },
   "relationships": {
@@ -625,6 +652,34 @@
       "type": "权力翻转/认知颠覆",
       "description": "第22章铁骊六页质问围剿沈安的'刚好及格'。前三问沈安沉默，第四问起身从书架取下《砥砺宗宗规》，翻到第三卷附录第二节末句——'宗门不强制超量修炼'。铁骊三十年默认被自己亲手抄入章程的一行字瓦解。沈安翻书无需查找——从书脊到目标页零停顿。铁骊随后意识到：如果第一天把话问完，今天就不是她在问沈安，是沈安在问她。她把剩余两页问题锁进抽屉。",
       "first_chapter": 22
+    },
+    "rel_23": {
+      "from": "tie_li",
+      "to": "meng_zheng",
+      "type": "宗主-首席监督",
+      "description": "第31章铁骊召孟征入偏殿议沈安去留。孟征先摆宗规支持保留——但铁骊问的不是合不合格而是你们想不想留。孟征被问住。",
+      "first_chapter": 31
+    },
+    "rel_24": {
+      "from": "tie_li",
+      "to": "cao_huan",
+      "type": "宗主-日常监督",
+      "description": "第31章曹桓补充沈安考核达标没理由退。但铁骊追问你们想不想留时曹桓沉默。",
+      "first_chapter": 31
+    },
+    "rel_25": {
+      "from": "tie_li",
+      "to": "chen_xu",
+      "type": "宗主-年轻监督（重视克制的观察）",
+      "description": "第31章陈序罕见开口说出沈安的克制——描完三十六道手停在石板边不是收笔是克制。铁骊在记事上写下'她看见了克制'。",
+      "first_chapter": 31
+    },
+    "rel_26": {
+      "from": "chen_xu",
+      "to": "shen_an",
+      "type": "观察/注意到克制",
+      "description": "第31章陈序观察沈安小比石板——他描完第三十六道时手停在石板边上停了一瞬。那个停法不是收笔，是克制。她不确定沈安在宗体系里算不算在修炼。",
+      "first_chapter": 31
     }
   },
   "disambiguation_warnings": [],
@@ -688,9 +743,9 @@
         "id": "thread_07",
         "name": "沈安在砥砺宗的试炼",
         "type": "新篇章线",
-        "description": "第10章沈安进入砥砺宗。铁骊给一个月期限——磨不动退回沈家。但铁骊按住衣角的细节暴露他期待沈安不好磨。沈安前世布下的天痕之脉网络覆盖全苍渊——砥砺宗也在其感知地图之上。 第11-20章：沈安进入砥砺宗内部，从晨练到试探到沉默同盟到全套道痕深度图。铁骊从审视到深度关注，影阁线浮出。试炼远超预期。",
+        "description": "第10章沈安进入砥砺宗。铁骊给一个月期限——磨不动退回沈家。第11-20章：从晨练到试探到沉默同盟到全套道痕深度图。第22章：宗规翻盘。第28-29章：小比三十六道全部达标，质疑被石板平息。第31章：铁骊召四监督正式决定'留'，亲自落款公示——试炼正式通过。",
         "first_chapter": 11,
-        "status": "active"
+        "status": "resolved"
       },
       {
         "id": "thread_08",
@@ -704,9 +759,10 @@
         "id": "thread_09",
         "name": "铁骊的认知转折",
         "type": "人物驱动线",
-        "description": "第11-20章：铁骊从'一个月磨不动退回'的审视者，转变为'此人不需要被磨，需要被理解'的困惑者。她三十年宗门经验在沈安面前开始松动——'有一个体系比她三十年教的更好，而创建者正在她门下做丁号新生。'第20章写信给沈怀远——称'怀远兄'，三十年通信中仅第二次用此称呼。",
+        "description": "第11-20章：铁骊从'一个月磨不动退回'的审视者，转变为'此人不需要被磨，需要被理解'的困惑者。第30章登后山决定'继续'。第31章完成弧线终点——正式决定'留'，亲自落款公示，领悟沈怀远信中'令郎非废石'非安慰而是提醒。三十年前后两封信同放一个抽屉。铁骊认知弧线完整闭环。",
         "first_chapter": 12,
-        "status": "active"
+        "last_chapter": 31,
+        "status": "resolved"
       },
       {
         "id": "thread_10",
@@ -1440,14 +1496,34 @@
     "0030": {
       "hook_type": "情感钩+决策钩",
       "ending_emotion": "释然的坚定"
+    },
+    "0031": {
+      "0031": {
+        "hook": {
+          "type": "决断钩",
+          "content": "铁骊召四位监督决定沈安去留。我问的不是他合不合格。我问的是你们留不留。三人犹豫，陈序看见克制。铁骊决定留——领悟沈怀远信中令郎非废石非安慰是提醒。铁骊认知弧线完成：从磨到留。",
+          "strength": "strong"
+        },
+        "pattern": {
+          "opening": "场景描写开场（偏殿清晨，石板上摆三张附纸）",
+          "hook": "决断钩",
+          "emotion_rhythm": "会议讨论→沉默→决断→公示→解读",
+          "info_density": "high"
+        },
+        "ending": {
+          "time": "下午",
+          "location": "丁号舍门口告示前",
+          "emotion": "被读懂后的沉默——赵砚嘴角动了一下，不确定那算不算笑"
+        }
+      }
     }
   },
   "strand_tracker": {
     "last_quest_chapter": 29,
     "last_fire_chapter": 24,
-    "last_constellation_chapter": 30,
+    "last_constellation_chapter": 31,
     "current_dominant": "constellation",
-    "chapters_since_switch": 0,
+    "chapters_since_switch": 1,
     "history": [
       {
         "chapter": 1,
@@ -1628,6 +1704,12 @@
         "strand": "constellation",
         "reason": "铁骊登后山铁梯——三十年时间线收束。与沈怀远三十年首次回信修复关系。决定'继续'——承认体系底下有自己没看透的东西。星丛线：权力者的自我认知革命与三十年时间闭环。",
         "switch_occurred": true
+      },
+      {
+        "chapter": 31,
+        "strand": "constellation",
+        "reason": "铁骊召四监督议沈安去留——从'磨'到'留'的认知弧线终点。亲自落款公示扛全宗压力。领悟沈怀远信中'令郎非废石'真意。三十年前后两封信同放一个抽屉。星丛线：权力者完成自我认知革命，公开做出一锤定音的决定。",
+        "switch_occurred": false
       }
     ]
   },
