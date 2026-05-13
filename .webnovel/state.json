@@ -31,9 +31,9 @@
     "cultivation_subtiers": ""
   },
   "progress": {
-    "current_chapter": 32,
+    "current_chapter": 33,
     "total_words": 48400,
-    "last_updated": "2026-05-12 22:30:00",
+    "last_updated": "2026-05-12 22:44:48",
     "volumes_completed": [],
     "current_volume": 1,
     "volumes_planned": [
@@ -1593,6 +1593,27 @@
         "time": "白天（书吏下山后）",
         "location": "丁号舍外灰岩柱",
         "emotion": "沉默的警觉（风已经来了——告示上还有第二行没说出来的字）"
+      }
+    },
+    "0033": {
+      "0033": {
+        "hook": {
+          "type": "线索钩",
+          "content": "旧矿道矿石+云隐宗十二年三封信——沈安推断书吏在找旧矿道之物",
+          "strength": "strong"
+        },
+        "pattern": {
+          "opening": "环境描写开场（经籍阁下午）",
+          "hook": "线索钩",
+          "emotion_rhythm": "平淡→探寻→意外→顿悟",
+          "info_density": "high"
+        },
+        "ending": {
+          "time": "第二十天下午",
+          "location": "经籍阁",
+          "emotion": "冷静推断",
+          "cliffhanger": "赵砚练碑手腕偏半厘——潜在伏笔"
+        }
       }
     }
   },
