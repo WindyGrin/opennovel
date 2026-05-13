@@ -31,9 +31,9 @@
     "cultivation_subtiers": ""
   },
   "progress": {
-    "current_chapter": 34,
+    "current_chapter": 35,
     "total_words": 50400,
-    "last_updated": "2026-05-13 23:58:22",
+    "last_updated": "2026-05-14 00:20:57",
     "volumes_completed": [],
     "current_volume": 1,
     "volumes_planned": [
@@ -1635,6 +1635,24 @@
           "location": "丁号舍门口",
           "emotion": "赵砚想通一切——现在他知道了"
         }
+      }
+    },
+    "0035": {
+      "hook": {
+        "type": "对抗钩",
+        "content": "沈崇武在族会上试图用十九页稿纸处理沈安，但铁骊的考评记录（「全部达标」）提前瓦解攻势——念到第三页手抖、跳过黑线句子、「平等」的「平」字被裂缝吞掉。云隐宗刻痕境修士沉默列席——外部势力已进入沈家议事堂。",
+        "strength": "strong"
+      },
+      "pattern": {
+        "opening": "动作开场（铁骊走在前，沈安走在其后进入青石城）",
+        "hook": "对抗钩",
+        "emotion_rhythm": "平静进入→政治博弈→压力崩溃→沉默观察→暗语诞生",
+        "info_density": "极高（多层感知：地板共振+稿纸墨痕+袖口黑痕+空椅茶温+暗青色矿石验证）"
+      },
+      "ending": {
+        "time": "族会散会后",
+        "location": "青石城→全城传开",
+        "emotion": "静默中诞生暗语（「大长老的'当然'」——一件事办不办得成，看你爹是谁）"
       }
     }
   },
