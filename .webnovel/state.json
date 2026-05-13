@@ -31,9 +31,9 @@
     "cultivation_subtiers": ""
   },
   "progress": {
-    "current_chapter": 33,
-    "total_words": 48400,
-    "last_updated": "2026-05-12 22:44:48",
+    "current_chapter": 34,
+    "total_words": 50400,
+    "last_updated": "2026-05-13 23:58:22",
     "volumes_completed": [],
     "current_volume": 1,
     "volumes_planned": [
@@ -52,9 +52,10 @@
       "bottleneck": "封印压制真实修为"
     },
     "location": {
-      "current": "苍渊·铁脊山脉·砥砺宗·丁号修炼舍",
-      "last_chapter": 31
+      "current": "苍渊·铁脊山脉·砥砺宗·丁号舍（准备赴沈氏族会）",
+      "last_chapter": 34
     },
+    "active_status": "首次主动行动：绘制旧矿道入口地图+同意赴沈氏全族议事+袖藏暗青色矿石（与温小鹿矿石同源）",
     "family": {
       "father": "沈怀远",
       "father_role": "沈氏戒律长老",
@@ -1615,14 +1616,34 @@
           "cliffhanger": "赵砚练碑手腕偏半厘——潜在伏笔"
         }
       }
+    },
+    "0034": {
+      "0034": {
+        "hook": {
+          "type": "决策钩",
+          "content": "沈安首次不靠柱子——画旧矿道地图。铁骊收沈崇武族会信(带族章铁脊雕)。篆版缺角沈安识出父亲三年前摔碎。铁骊说去。沈安说我也去——第一次主动做决定。袖藏暗青色矿石。赵砚忽然想到铁骊没说入口封了。",
+          "strength": "strong"
+        },
+        "pattern": {
+          "opening": "动作开场(柱子前空着)",
+          "hook": "决策钩",
+          "emotion_rhythm": "平静→专注→紧张→决断",
+          "info_density": "high"
+        },
+        "ending": {
+          "time": "第二十一天早上",
+          "location": "丁号舍门口",
+          "emotion": "赵砚想通一切——现在他知道了"
+        }
+      }
     }
   },
   "strand_tracker": {
     "last_quest_chapter": 29,
-    "last_fire_chapter": 24,
+    "last_fire_chapter": 34,
     "last_constellation_chapter": 32,
-    "current_dominant": "constellation",
-    "chapters_since_switch": 2,
+    "current_dominant": "fire",
+    "chapters_since_switch": 1,
     "history": [
       {
         "chapter": 1,
@@ -1815,6 +1836,18 @@
         "strand": "constellation",
         "reason": "云隐宗书吏从后山悄然到访——外部势力正式接触砥砺宗。铁骊偏殿密谈、沈安全维推理、赵砚观察进阶——三线并行推进截胡前奏与留白悬疑。星丛线：外部权力网络开始向砥砺宗施加压力。",
         "switch_occurred": false
+      },
+      {
+        "chapter": 33,
+        "strand": "constellation",
+        "reason": "沈安在经籍阁翻阅外宗卷宗发现云隐宗十二年三封信铁骊全未回复。温小鹿主动传递暗青色矿石——沉默同盟量变节点。旧矿道碎石分布超出铁骊预期。星丛线：外部势力渗透与内部权力博弈的证据积累。",
+        "switch_occurred": false
+      },
+      {
+        "chapter": 34,
+        "strand": "fire",
+        "reason": "沈安首次从被动观测转为主动行动——画旧矿道地图+同意赴沈氏族会+袖藏暗青色矿石。火线:主角第一次以自身意志向前踏出一步,从静态的观测者变为行动者。赵砚观察弧线收束为辅——看懂铁骊的沉默。",
+        "switch_occurred": true
       }
     ]
   },
